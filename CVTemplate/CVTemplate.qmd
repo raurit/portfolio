@@ -42,7 +42,7 @@ cvevents <- function(tbl, when, what, where, details) {
 
 # Summary
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
 
 # Experience
 
@@ -52,10 +52,10 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
-    "Team Lead", "GESIS - Leibniz Institute for the Social Sciences", "Mar. 2022 - Present",
-    "Transparent Social Analytics, Department of Computational Social Science", c("Coordination of a project to build an Open Science platform with reusable code and tutorials", "Research on Open Science Practices", "Implementation of tools to enhance reproducibility and facilitate research with digital data in R"),
-    "Presidential Fellow", "University of Manchester", "Sep. 2018 - Feb. 2022",
-    "Sociology Department", c("Research on Disinformation on Social Media", "Analyses of large scale and unstructured data sets with R, Python and Bash"),
+    "Design Studio Associate", "University of Nebraska-Lincoln", "Aug. 2025 - Present",
+    "Jeffrey S. Raikes School of Computer Science and Management", c("Developing an agentic AI framework to assist with manual processing and administrative tasks utilizing computer vision for corporate sponsor", "Communicating with sponsors, stakeholders, and academic leads to establish clear goals and objectives to execute a defined vision statement"),
+    "AI in STEM Education Intern", "Nebraska Extension, 4-H", "May 2025 - Present",
+    "Positive youth development for Nebraskans", c("Teaching members of the youth ages 8-18 in the focus areas of science, technology, engineering, and math", "Creating learning modules to assist in learning in statistics, data science, artificial intelligence, and computer science", "Utilizing CodePen to create youth-friendly UI illustrating written lesson plans"),
     "Post Doctoral Researcher", "ETH Zurich", "Nov. 2017 - Aug. 2018", "Chair of Social Networks", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Gathering and analyzing large datsets from Social Media APIs"),
     "Post Doctoral Researcher", "University of Konstanz", "Oct. 2015 - Oct. 2017", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Webscraping and harmonizing a large corpus of football data"),
     "Ph.D. Candidate", "University of Konstanz", "Nov. 2012 - Sep. 2015", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries")

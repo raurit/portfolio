@@ -12,10 +12,11 @@ website:
         href: https://github.com/raurit
       - icon: linkedin
         href: https://www.linkedin.com/in/rayne-aurit-08538a29a/
+
 format:
   html:
     theme:
-      - cosmo
+      - united
       - brand
     css: styles.css
 

@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "posts/first-post/index.html",
-    "href": "posts/first-post/index.html",
-    "title": "First Post",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Rayne Aurit’s Portfolio",
     "section": "",
-    "text": "Hello\nThis is the first post in my portfolio. This portfolio will consist of updates on my professional journey and projects that I have been working on in class and in my own free time."
+    "text": "First Post\n\n\n\nblog\n\n\n\n\n\n\n\n\n\nJan 14, 2026\n\n\nRayne Aurit\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -14,10 +14,10 @@
     "text": "Rayne Aurit is student pursuing their bachelor’s degrees in Statistics and Data Analytics and Computer Science at the University of Nebraska- Lincoln. Currently on their third year of study, they have gotten many valuable experiences in the Statistics Department and as an associate of the Jeffrey S. Raikes School of Computer Science and Management. They work as an AI in STEM Education Intern underneath Nebraska 4-H."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Rayne Aurit’s Portfolio",
+    "objectID": "posts/first-post/index.html",
+    "href": "posts/first-post/index.html",
+    "title": "First Post",
     "section": "",
-    "text": "First Post\n\n\n\nblog\n\n\n\n\n\n\n\n\n\nJan 14, 2026\n\n\nRayne Aurit\n\n\n\n\n\nNo matching items"
+    "text": "Hello\nThis is the first post in my portfolio. This portfolio will consist of updates on my professional journey and projects that I have been working on in class and in my own free time."
   }
 ]

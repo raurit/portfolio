@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Rayne Aurit's Portfolio"
+  favicon: "favicon.png"
   navbar:
     right:
       - Resume/ResumeRayneAurit.qmd

@@ -1,5 +1,5 @@
 ---
-title: "portfolio"
+title: "Rayne Aurit's Portfolio"
 listing:
   contents: posts
   sort: "date desc"

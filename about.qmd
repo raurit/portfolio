@@ -1,19 +1,16 @@
 ---
-title: "About"
-image: profile.jpg
+title: "About Me"
+image: profilePicture.jpg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/rayne-aurit-08538a29a/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/raurit
 
 ---
 
-About this blog
+Rayne Aurit is student pursuing their bachelor's degrees in Statistics and Data Analytics and Computer Science at the University of Nebraska- Lincoln. Currently on their third year of study, they have gotten many valuable experiences in the Statistics Department and as an associate of the Jeffrey S. Raikes School of Computer Science and Management. They work as an AI in STEM Education Intern underneath Nebraska 4-H.

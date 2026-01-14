@@ -6,6 +6,7 @@ website:
   title: "Rayne Aurit's Portfolio"
   navbar:
     right:
+      - CVTemplate/CVTemplate.qmd
       - about.qmd
       - icon: github
         href: https://github.com/

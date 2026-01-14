@@ -1,0 +1,11 @@
+---
+title: "First Post"
+author: "Rayne Aurit"
+date: "2026-01-14"
+categories: [blog]
+image: "profilePicture.jpg"
+---
+
+# Hello
+
+This is the first post in my portfolio. This portfolio will consist of updates on my professional journey and projects that I have been working on in class and in my own free time.

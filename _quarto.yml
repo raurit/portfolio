@@ -9,9 +9,9 @@ website:
       - CVTemplate/CVTemplate.qmd
       - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/raurit
+      - icon: linkedin
+        href: https://www.linkedin.com/in/rayne-aurit-08538a29a/
 format:
   html:
     theme:

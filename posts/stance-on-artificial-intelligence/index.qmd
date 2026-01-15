@@ -1,0 +1,26 @@
+---
+title: "Stance on Artificial Intelligence"
+author: "Rayne Aurit"
+date: "2026-01-14"
+categories: [blog]
+---
+
+This post will serve as the starting point for my opinion on Artificial Intelligence. This opinion will be guaranteed to change over time as the technology becomes more sophisticated and more people become aware of its uses. I am eager to learn how it will change as I continue to work with Artificial Intelligence as someone who trains machine learning models and helps design AI agent frameworks.
+
+# Introduction
+
+As a student, and more specifically, a student who has experience with multiple forms of artificial intelligence, it is important to understand the advantages and disadvantages of artificial intelligence and its impact on the world around us and ourselves. Artificial Intelligence, much like most modern technological advancements, is a tool whose responsibility of proper usage currently belongs on the user only. To define Artificial Intelligence, it is the ability of a computer processes through an algorithm to make a decision. Most language surrounding Artificial Intelligence, or AI, is in reference to Large Language Models such as ChatGPT, Copilot, or Gemini. My stance will include other forms such as self-driving vehicles, image-generating AI in specific contexts, and bot accounts on the internet.
+
+# Issues with Artificial Intelligence
+
+Across the United States, in this past year, there has been a concerted effort to inhibit regulation of the growth of artificial intelligence with praise and support for how fast this technology is growing in comparison to the lack of legal efforts to prevent some of the harmful effects. 
+
+## Google and Data Centers
+
+Google's data center went live this past year after a few years of development alongside interstate I-80 and 56th street. I am curious how Lincoln residents will feel the effects of the data center in these coming years in areas such as water quality and the cost of electricity. As a freshman, the topic of the local data center came up in discussion in my science literacy course underneath the College of Agriculture and Natural Resources. The unit that we were working on the time was water conservation after previously discussing plastic pollution. We were asked a question on if anybody knew if the data center was still being built as the site looked dormant for a long period of time, and the answer was yes. Originally, I felt proud of being the one to be able to answer the question and was aware about the development, though extremely naive and unaware of the impact of data centers in other areas of the country. I recalled Google as a great company with wonderful work experience. Those who were hired by Google were the best of the best and their facilities looked like adult playgrounds when images of them were introduced to me in middle school. 
+
+Since then, they have notably taken off language in their corporate code of conduct. "Do no evil" was replaced with "Do the right thing." It is a small, but noticeable semantic difference. While right and wrong is ambiguous in many cases, the notion of doing "no evil" brings about the mindset of avoiding harm at any costs. Doing "the right thing" may allow Google to weigh the costs and benefits of certain actions. If an action does "evil" but is arguably for the greater good and is a "right thing," then it is an action that is justified within the code of conduct, allowing for "evils" to escape the same amount of scrutiny as before.
+
+# Benefits of Artificial Intelligence
+
+In a more positive swing, I do believe that there are beneficial uses of artificial intelligence. For Large Language Models, they can be used to quicken mundane tasks that would otherwise not require much thinking. In Design Studio, my team and I are creating an AI agent framework that will hasten the speed of manually inputting insurance information using computer vision. The downside of this product is that it will inevitably replace human work, and therefore potentially contribute to job loss as the technology becomes more advanced and accurate. 

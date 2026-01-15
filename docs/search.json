@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Rayne Aurit’s Portfolio",
+    "objectID": "posts/first-post/index.html",
+    "href": "posts/first-post/index.html",
+    "title": "First Post",
     "section": "",
-    "text": "First Post\n\n\n\nblog\n\n\n\n\n\n\n\n\n\nJan 14, 2026\n\n\nRayne Aurit\n\n\n\n\n\nNo matching items"
+    "text": "Hello and welcome to the first post on my personal portfolio doubling as a page where I can dispense my thoughts and other items of personal interest.\n\nWhat to Expect\nThis portfolio will consist of updates on my professional journey and projects that I have been working on in class and in my own free time. As a statistics student, my goal of this year in preparing for graduate school is to take on more personal projects, especially as my repertoire of statistical skills becomes more full. With the department set up for elimination officially as of December 5th, 2025, self-study will be my greatest ally in keeping in touch with the knowledge that I have gained in undergraduate school while preparing to leave the state and finding a home for a graduate degree.\nI firmly believe in the goal of being well-rounded and not to narrow in on one specific skill. In addition to data analyses and educational projects, I also will post art projects and other creative projects. Originally, I used to post on Instagram, running an art account, until there was notice of posts on Instagram being scraped to use for training data on Meta’s LLMs and image-generating models. Since then, I have not found a place to host progress in my art journey. For those who are reading this to see data analyses or classwork, I hope you enjoy some color in between the technical writing.\n\n\nNew Year, New Me\nNot quite. Help setting up this portfolio is credited to Dr. Susan Vanderplas through a statistics course on technical writing. I expect that a large portion of updates will be a result of homework and projects from said course as well. Aside from that, my goals for this spring semester include:\n\nFinding 2 data sets to analyze and create visuals for\nPut coursework projects in this portfolio to display the progress of my learning\nSubmit 4 artworks for the Laurus, an undergraduate fine arts magazine\nCreate a new club to support those still interested in statistics despite the department’s elimination\n\nThese goals have no particular ordering as most are long term and will be steadily accomplished simultaneously- aside from artworks for the Laurus. Submissions are due on January 30th of this year and include works created throughout the past year, of which I already have two or three."
   },
   {
     "objectID": "about.html",
@@ -14,10 +14,24 @@
     "text": "Rayne Aurit is student pursuing their bachelor’s degrees in Statistics and Data Analytics and Computer Science at the University of Nebraska- Lincoln. Currently on their third year of study, they have gotten many valuable experiences in the Statistics Department and as an associate of the Jeffrey S. Raikes School of Computer Science and Management. They work as an AI in STEM Education Intern underneath Nebraska 4-H."
   },
   {
-    "objectID": "posts/first-post/index.html",
-    "href": "posts/first-post/index.html",
-    "title": "First Post",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Rayne Aurit’s Portfolio",
     "section": "",
-    "text": "Hello and welcome to the first post on my personal portfolio doubling as a page where I can dispense my thoughts and other items of personal interest.\n\nWhat to Expect\nThis portfolio will consist of updates on my professional journey and projects that I have been working on in class and in my own free time. As a statistics student, my goal of this year in preparing for graduate school is to take on more personal projects, especially as my repetoire of statistical skills becomes more full. With the department set up for elimination officially as of December 5th, 2025, self-study will be my greatest ally in keeping in touch with the knowledge that I have gained in undergraduate school while preparing to leave the state and finding a home for a graduate degree.\nI firmly believe in the goal of being well-rounded and not to narrow in on one specific skill. In addition to data analyses and educational projects, I also will post art projects and other creative projects. Originally, I used to post on Instagram, running an art account, until there was notice of posts on Instagram being scraped to use for training data on Meta’s LLMs and image-generating models. Since then, I have not found a place to host progress in my art journey. For those who are reading this to see data analyses or classwork, I hope you enjoy some color in between the technical writing.\n\n\nNew Year, New Me\nNot quite. Help setting up this portfolio is credited to Dr. Susan Vanderplas through a statistics course on technical writing. I expect that a large portion of updates will be a result of homework and projects from said course as well. Aside from that, my goals for this spring semester includes:\n\nFinding 2 data sets to analyze and create visuals for\nPut coursework projects in this portfolio to display the progress of my learning\nSubmit 4 artworks for the Laurus, an undergraduate fine arts magazine\nCreate a new club to support those still interested in statistics despite the department’s elimination\n\nThese goals have no particular ordering as most are long term and will be steadily accomplished simultaneously- aside from artworks for the Laurus. Submissions are due on January 30th of this year and include works created throughout the past year, of which I already have two or three."
+    "text": "First Post\n\n\n\nblog\n\n\n\n\n\n\n\n\n\nJan 14, 2026\n\n\nRayne Aurit\n\n\n\n\n\n\n\n\n\n\n\n\nStance on Artificial Intelligence\n\n\n\nblog\n\n\n\n\n\n\n\n\n\nJan 14, 2026\n\n\nRayne Aurit\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/stance-on-artificial-intelligence/index.html",
+    "href": "posts/stance-on-artificial-intelligence/index.html",
+    "title": "Stance on Artificial Intelligence",
+    "section": "",
+    "text": "This post will serve as the starting point for my opinion on Artificial Intelligence. This opinion will be guaranteed to change over time as the technology becomes more sophisticated and more people become aware of its uses. I am eager to learn how it will change as I continue to work with Artificial Intelligence as someone who trains machine learning models and helps design AI agent frameworks."
+  },
+  {
+    "objectID": "posts/stance-on-artificial-intelligence/index.html#google-and-data-centers",
+    "href": "posts/stance-on-artificial-intelligence/index.html#google-and-data-centers",
+    "title": "Stance on Artificial Intelligence",
+    "section": "Google and Data Centers",
+    "text": "Google and Data Centers\nGoogle’s data center went live this past year after a few years of development alongside interstate I-80 and 56th street. I am curious how Lincoln residents will feel the effects of the data center in these coming years in areas such as water quality and the cost of electricity. As a freshman, the topic of the local data center came up in discussion in my science literacy course underneath the College of Agriculture and Natural Resources. The unit that we were working on the time was water conservation after previously discussing plastic pollution. We were asked a question on if anybody knew if the data center was still being built as the site looked dormant for a long period of time, and the answer was yes. Originally, I felt proud of being the one to be able to answer the question and was aware about the development, though extremely naive and unaware of the impact of data centers in other areas of the country. I recalled Google as a great company with wonderful work experience. Those who were hired by Google were the best of the best and their facilities looked like adult playgrounds when images of them were introduced to me in middle school.\nSince then, they have notably taken off language in their corporate code of conduct. “Do no evil” was replaced with “Do the right thing.” It is a small, but noticeable semantic difference. While right and wrong is ambiguous in many cases, the notion of doing “no evil” brings about the mindset of avoiding harm at any costs. Doing “the right thing” may allow Google to weigh the costs and benefits of certain actions. If an action does “evil” but is arguably for the greater good and is a “right thing,” then it is an action that is justified within the code of conduct, allowing for “evils” to escape the same amount of scrutiny as before."
   }
 ]

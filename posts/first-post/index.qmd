@@ -3,7 +3,7 @@ title: "First Post"
 author: "Rayne Aurit"
 date: "2026-01-14"
 categories: [blog]
-image: "profilePicture.jpg"
+image: "content.png"
 ---
 
 Hello and welcome to the first post on my personal portfolio doubling as a page where I can dispense my thoughts and other items of personal interest.

@@ -1,0 +1,171 @@
+---
+title: Resume
+format:
+  modern2-cv-pdf: default
+author: Rayne Aurit
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvcolor: 
+  main: B83B5E
+  accent: 6A2C70
+jobtitle: AI in STEM Education Intern
+sidebar:
+  image:
+  bullets:
+    - Lincoln, NE
+  sections: 
+    - name: Languages
+      items:
+        - text: R
+          exp: 
+            text: "3 yrs."
+            num: 1
+        - text: Python
+          exp: 
+            text: "1 yrs."
+            num: 0.33
+        - text: SAS
+          exp: 
+            text: "2 yrs."
+            num: 0.66
+        - text: Java
+          exp: 
+            text: "2 yrs."
+            num: 0.66
+        - text: Markdown
+          exp: 
+            text: "3 yrs."
+            num: 1
+        - text: Latex
+          exp: 
+            text: "2 yrs."
+            num: 0.66
+    - name: Tools
+      items:
+        - Git
+        - RStudio
+        - VS Code
+        - Tableau
+        - Quarto
+    - name: Education
+      items:
+        - text: "Bachelor's of Science in Statistics and Data Analytics, Computer Science"
+          inst: "University of Nebraska- Lincoln"
+          time: "08/2023 - 05/2027"
+          details: "GPA: 3.98"
+        - text: "High School Diploma"
+          inst: "Elkhorn South High School"
+          time: "08/2019 - 05/2023"
+          details: "Unweighted GPA: 3.9"
+    - name: Contact
+      items:
+        - icon: map-marker
+          text: Lincoln, NE
+        - icon: envelope
+          text: auritrayne@gmail.com
+        - icon: home
+          text: Portfolio
+          href: https://raurit.github.io/portfolio/
+        - icon: github
+          text: raurit
+          href: https://github.com/raurit
+        - icon: linkedin
+          text: LinkedIn
+          href: https://www.linkedin.com/in/rayne-aurit-08538a29a/   
+execute: 
+  echo: false
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+
+    command_start <- "\\cvevent"
+    tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}",
+        "{", tbl[[descr]], "}"
+        )
+
+    cat(res, sep = "\n\n\n")
+}
+
+cvproj <- function(tbl,what,role,items){
+    command_start <- "\\cvproj"
+    res <- paste0(
+        command_start, "{", tbl[[what]], "}",
+        "{", tbl[[role]], "}",
+        "{", sapply(tbl[[items]], function(x)paste0(x,collapse = ", ")), "}"
+    )
+
+    cat(res, sep = "\n\n\n")
+}
+```
+
+# Objective
+
+Undergraduate student interested in experiences that create a direct positive impact on people's lives in fields such as health or technology, utilizing data analytics and statistical expertise.
+
+# Experience
+
+```{r}
+#| label: experience
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+    "Design Studio Associate", "Jeffrey S. Raikes School of Computer Science and Management at University of Nebraska-Lincoln", "Aug. 2025 - Present",
+    "Developing an agentic AI framework to assist with manual processing and administrative tasks utilizing computer vision for corporate sponsor. Communicating with sponsors, stakeholders, and academic leads to establish clear goals and objectives to execute a defined vision statement",
+    "AI in STEM Education Intern", "Nebraska Extension, 4-H", "May 2025 - Present",
+    "Teaching members of the youth ages 8-18 in the focus areas of science, technology, engineering, and math. Creating learning modules to assist learning in statistics, data science, artificial intelligence, and computer science. Utilizing CodePen to create youth-friendly UI illustrating written lesson plans",
+    "Undergraduate Researcher", "University of Nebraska- Lincoln", "August 2024 - May 2025",
+    "Researched the addition of classification variables in simple and multiple distance-based linear regression using k-nearest neighbors. Presented in statistics classrooms and in conference setting.",
+    "Undergraduate Teaching Assistant", "University of Nebraska- Lincoln", "January 2024 - May 2025",
+    "Provided aid to students on homework assignments and supplemental learning for courses CSCE 235, Introduction to Discrete Structures, and STAT 380, Statistics and Applications. Graded assignments including encouraging and essential feedback",
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Involvement
+
+```{r}
+#| label: involvement
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+    "Cornusker Marching Band", "University of Nebraska- Lincoln", "Aug. 2023 - Jan. 2026", "Member (2023-2025). Performed during football halftime shows and end of year highlights concert. Participated in daily early morning rehearsals and represented the university in athletic events. Traveled to and represented the state of Nebraska at Pinstripe and Las Vegas bowl games",
+    "Statistics Club", "University of Nebraska- Lincoln", "Jan. 2026 - Present","President and Founder (2026). Social and professional club towards fostering undergraduate statistics community at the University of Nebraska- Lincoln post Board of Regents decision to eliminate the department. Holds events such as presentation nights, mock consultations, data hackathons",
+    "oSTEM", "University of Nebraska- Lincoln", "August 2023 - Present","Treasurer/Social Media Manager (2024-2025), Member (2023). Largest chapter organization promoting diversity and inclusion for LGBTQ+ members in STEM. National annual STEM conferences with career fairs and professional development speakers",
+    "OutNebraska", "Lincoln, NE", "Nov. 2024 - Present","Volunteer (2024-2025). Non-profit organization dedicated to informing people about current issues facing the LGBTQ+ community and promoting inclusive environments. Aided in data entry and participated in events promoting positive change, such as quilting in collaboration with ACLU to celebration of transgender people to be displayed in the National Mall",
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Honors and Awards
+
+```{r}
+#| label: honors
+#| output: asis
+tibble::tribble(
+    ~what, ~role, ~items,
+    "Scholarships", "", c("Nebraska Career Scholarship", "Regents Scholarship", "George Wenke Scholarship", "Elkhorn Public Schools Foundation ACHIEVE Scholarship"),
+    "Honors", "", c("College of Agriculture and Natural Resources Dean’s List (Fall 2023, Spring 2024, Fall 2024, Spring 2025)", "College of Engineering Dean’s List (Fall 2024 after second major declared, Spring 2025)", "2 Publications in University of Nebraska-Lincoln’s Laurus, undergraduate fine arts magazine", "Alpha Lambda Delta membership for first-year academic success"),
+    
+) |>
+    cvproj(what = "what", role = "role", items = "items")
+
+```
+
+# Skills
+
+```{r}
+#| label: skills
+#| output: asis
+tibble::tribble(
+    ~what, ~role, ~items,
+    "Software Engineering Skills", "", c("iDesign software architecture", "Agile", "unit testing", "SOLID principles", "object-oriented programming", "AI agentic frameworks", "prompt Engineering"),
+    "Data Science Skills", "", c("Data wrangling","data visualization","data simulation","K-Nearest neighbors","model evaluation","dimensionality reduction"),
+) |>
+    cvproj(what = "what", role = "role", items = "items")
+
+```

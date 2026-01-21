@@ -7,7 +7,6 @@ website:
   favicon: "favicon.png"
   navbar:
     right:
-      - ResumeModern/template-cover-letter.qmd
       - ResumeModern/ResumeModern.qmd
       - about.qmd
       - icon: github

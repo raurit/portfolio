@@ -3,6 +3,7 @@ title: "Stance on Artificial Intelligence"
 author: "Rayne Aurit"
 date: "2026-01-15"
 categories: [blog]
+draft: true
 ---
 
 This post will serve as the starting point for my opinion on Artificial Intelligence. This opinion will be guaranteed to change over time as the technology becomes more sophisticated and more people become aware of its uses. I am eager to learn how it will change as I continue to work with Artificial Intelligence as someone who trains machine learning models and helps design AI agent frameworks.

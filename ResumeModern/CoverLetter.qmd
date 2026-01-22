@@ -1,0 +1,40 @@
+---
+format:
+  modern2-cover-letter-pdf: default
+author: Rayne Aurit
+date: today
+date-format: long
+
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvcolor: 
+  main: B83B5E
+  accent: 6A2C70
+  
+title: Example Cover Letter
+sub-title: 'Application for NASA Summer Data Analytics Internship'
+
+contact:
+  street: 21311 I Street
+  zip: 68022
+  city: Elkhorn, NE
+  #phone: +1 (402) 490-6969
+  mail: auritrayne@gmail.com
+  
+organization: 
+  contact-person: Hiring Manager
+  name: NASA
+  street: Second Street 2
+  zip: 1234 
+  city: Some City
+    
+---
+
+Dear Hiring Manager,
+
+I am interested in the Summer Data Analytics NASA Internship.
+
+One of the major conflicts that arose during my fall semester of my junior year was the university administration's decision to eliminate the department that housed my main major. Through that experience, I rose up to the challenge of standing for the department through multiple testimonies and community-building.
+
+Don't hesitate to reach out,
+
+Rayne

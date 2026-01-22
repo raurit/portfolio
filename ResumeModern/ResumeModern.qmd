@@ -118,9 +118,9 @@ tibble::tribble(
     "Developing an agentic AI framework to assist with manual processing and administrative tasks utilizing computer vision for corporate sponsor. Communicating with sponsors, stakeholders, and academic leads to establish clear goals and objectives to execute a defined vision statement",
     "AI in STEM Education Intern", "Nebraska Extension, 4-H", "May 2025 - Present",
     "Teaching members of the youth ages 8-18 in the focus areas of science, technology, engineering, and math. Creating learning modules to assist learning in statistics, data science, artificial intelligence, and computer science. Utilizing CodePen to create youth-friendly UI illustrating written lesson plans",
-    "Undergraduate Researcher", "University of Nebraska- Lincoln", "August 2024 - May 2025",
+    "Undergraduate Researcher", "University of Nebraska- Lincoln", "Aug. 2024 - May 2025",
     "Researched the addition of classification variables in simple and multiple distance-based linear regression using k-nearest neighbors. Presented in statistics classrooms and in conference setting.",
-    "Undergraduate Teaching Assistant", "University of Nebraska- Lincoln", "January 2024 - May 2025",
+    "Undergraduate Teaching Assistant", "University of Nebraska- Lincoln", "Jan. 2024 - May 2025",
     "Provided aid to students on homework assignments and supplemental learning for courses CSCE 235, Introduction to Discrete Structures, and STAT 380, Statistics and Applications. Graded assignments including encouraging and essential feedback",
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", descr = "details")
@@ -135,7 +135,7 @@ tibble::tribble(
     ~role, ~institution, ~dates, ~details,
     "Cornusker Marching Band", "University of Nebraska- Lincoln", "Aug. 2023 - Jan. 2026", "Member (2023-2025). Performed during football halftime shows and end of year highlights concert. Participated in daily early morning rehearsals and represented the university in athletic events. Traveled to and represented the state of Nebraska at Pinstripe and Las Vegas bowl games",
     "Statistics Club", "University of Nebraska- Lincoln", "Jan. 2026 - Present","President and Founder (2026). Social and professional club towards fostering undergraduate statistics community at the University of Nebraska- Lincoln post Board of Regents decision to eliminate the department. Holds events such as presentation nights, mock consultations, data hackathons",
-    "oSTEM", "University of Nebraska- Lincoln", "August 2023 - Present","Treasurer/Social Media Manager (2024-2025), Member (2023). Largest chapter organization promoting diversity and inclusion for LGBTQ+ members in STEM. National annual STEM conferences with career fairs and professional development speakers",
+    "oSTEM", "University of Nebraska- Lincoln", "Aug. 2023 - Present","Treasurer/Social Media Manager (2024-2025), Member (2023). Largest chapter organization promoting diversity and inclusion for LGBTQ+ members in STEM. National annual STEM conferences with career fairs and professional development speakers",
     "OutNebraska", "Lincoln, NE", "Nov. 2024 - Present","Volunteer (2024-2025). Non-profit organization dedicated to informing people about current issues facing the LGBTQ+ community and promoting inclusive environments. Aided in data entry and participated in events promoting positive change, such as quilting in collaboration with ACLU to celebration of transgender people to be displayed in the National Mall",
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", descr = "details")

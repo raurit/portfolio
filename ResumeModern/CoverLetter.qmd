@@ -10,31 +10,35 @@ cvcolor:
   main: B83B5E
   accent: 6A2C70
   
-title: Example Cover Letter
+title: NASA Cover Letter
 sub-title: 'Application for NASA Summer Data Analytics Internship'
 
 contact:
-  street: 21311 I Street
-  zip: 68022
-  city: Elkhorn, NE
-  #phone: +1 (402) 490-6969
+  street: street
+  zip: 12345
+  city: Lincoln, NE
   mail: auritrayne@gmail.com
+  #phone: +1 (402) 490-6969
   
 organization: 
   contact-person: Hiring Manager
   name: NASA
-  street: Second Street 2
-  zip: 1234 
-  city: Some City
+  street: 4800 Lilly Ave
+  zip: 93524
+  city: Edwards AFB, CA
     
 ---
 
 Dear Hiring Manager,
 
-I am interested in the Summer Data Analytics NASA Internship.
+My name is Rayne Aurit, and I am interested in the Summer Data Analytics NASA Internship. Because of University of Nebraska- Lincoln's in-depth undergraduate statistics program and my former research experience, I believe I am well-suited for the technical skills and possible learning curves needed to succeed and contribute to the Armstrong Flight Research Center data analytics team. 
 
-One of the major conflicts that arose during my fall semester of my junior year was the university administration's decision to eliminate the department that housed my main major. Through that experience, I rose up to the challenge of standing for the department through multiple testimonies and community-building.
+Presently, I am a hard-working student, a campus leader, an intern for Nebraska 4-H, and a Design Studio associate of the Jeffrey S. Raikes School of Computer Science and Management, all roles which enforce my ability to strive and learn many computer languages and applications. Tools and methods to analyze data are ever-expanding, plentiful knowledge required in order to extract the most practically beneficial insights from science data. Specifically in my position as an associate, I worked with emerging technologies to help create an agentic artificial intelligence framework utilizing computer vision. I would love to be able to merge my computer science technical experience with data analytics through ChatGPT GOV.
 
-Don't hesitate to reach out,
+One of the major conflicts that arose during the fall semester of my junior year was the university administration's decision based on bad data to eliminate the statistics department. From that experience, I gained many public speaking opportunities, learned ways to build community, and reinforced my passion for data analytics that would be beneficial for the internship and its required team collaboration skills. After the elimination of statistics graduate programs in Nebraska, this data analytics internship in California is a wonderful opportunity to grow my network outside of the Midwest and grow skills using diverse data sets.
+
+With my skills of communication, cooperation, devotion to learning, and tenacity, I know I can succeed as a NASA Data Analytics Intern. Thank you for taking time to read this letter. To contact me further, reach me via email at auritrayne@gmail.com or via call at ((())).
+
+Best regards,
 
 Rayne

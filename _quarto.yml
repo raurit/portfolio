@@ -7,6 +7,7 @@ website:
   favicon: "favicon.png"
   navbar:
     right:
+      - gallery.qmd
       - ResumeModern/CoverLetter.qmd
       - ResumeModern/ResumeModern.qmd
       - about.qmd

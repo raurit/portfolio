@@ -1,0 +1,10 @@
+---
+title: "Art Gallery"
+format: html
+---
+
+::: {layout-ncol=2}
+![Shade: November, 2025](posts/shade/Scribbles.jpg){.lightbox}
+
+![Frog Collage: April, 2025](posts/frog-collage/Frog.jpg){.lightbox}
+:::

@@ -1,0 +1,15 @@
+---
+title: "Shade"
+format: html
+author: "Rayne Aurit"
+date: "2026-01-28"
+categories: [Art]
+image: "Scribbles.jpg"
+---
+
+![Scribbles](Scribbles.jpg)
+*Digital art; Rayne Aurit, November, 2025*
+
+This piece is one of the first for this year's submissions into the 2026 edition of the Laurus. This is one of my more recent artworks, one that I felt more looser in creating. The lines are messy, the shapes are there but not refined, and there is little to no rendering. The suggestion of trees and the background mountain speak more than the objects themselves. Things are fuzzier after my department was eliminated. Art is a hobby of mine, yet it is hard to find time to sit down and create. So much of the world today is built on consumption. AI will never be able to replace the feeling of putting down those first few marks, to want to draw mountains and tress. The end product is never the point of creating art, and that is something that I explored more with this piece. 
+
+I am currently writing a synopsis on my opinion on artificial intelligence. I am particularly interested in how it affects my relationship with art in multiple facets: creating art, enjoying others' art, and criticizing art. AI cannot consciously determine that an artwork needs to be more "scribbly" at will. It has to be prompted, and the "scribbles" are meshed artworks from other people. There is no explanation on why the tree tends to bow out one way and is flimsier at the top, or how the shrubs stick out in a certain way. Nobody is able to take that from AI art without hallucinations, in both the senses of in human and technology.

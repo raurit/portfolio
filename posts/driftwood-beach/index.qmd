@@ -1,0 +1,12 @@
+---
+title: "Driftwood Beach"
+format: html
+author: "Rayne Aurit"
+date: "2026-01-31"
+categories: [Art]
+image: "AllTheWorldsAStage.jpg"
+draft: yes
+---
+
+![](DriftwoodBeach.jpg)
+*Photography; Rayne Aurit, June, 2025*

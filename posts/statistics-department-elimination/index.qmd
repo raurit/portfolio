@@ -7,4 +7,8 @@ draft: yes
 image: "1758576848737.jpg"
 ---
 
-September 11, 2025. I started my day with the daily Cornhusker Marching Band rehearsal.
+**September 11, 2025.**
+I started my day with the daily Cornhusker Marching Band rehearsal. For the honor of the firefighters and other first responders that lost their lives in the 9/11 attacks, the fire and rescue team were running up and down the stadium stairs the same number of flights of the World Trade Center. My day was relatively normal, aside from in my Multivariate Analysis course. The professor had spontaneously decided to give us notice about the method of which the university has done budget cuts in the past, noting that statistic majors should pay attention. He spoke of the difference between horizontal and vertical cuts: one which shaves a top off of every facet of the university, and one which eliminates whole programs. At 10:05pm that night, my professor posted a message on our canvas page which included, "the department has been recommended to be eliminated. All tenured and tenure-track faculty will lose their jobs, likely sometime next fall." I didn't see the message until I woke up for marching band the next morning.
+
+**September 12, 2025**
+Computer science courses at the University of Nebraska- Lincoln have enrollment of about over a hundred students on average. In contrast, statistics courses that are non general education for other majors sit at around 10-20.

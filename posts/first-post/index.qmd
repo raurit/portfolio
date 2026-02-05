@@ -2,7 +2,7 @@
 title: "First Post"
 author: "Rayne Aurit"
 date: "2026-01-14"
-categories: [blog]
+categories: [Blog]
 image: "content.png"
 ---
 

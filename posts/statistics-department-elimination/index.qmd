@@ -2,7 +2,7 @@
 title: "Losing my Department"
 author: "Rayne Aurit"
 date: "2026-01-27"
-categories: [blog]
+categories: [Blog]
 draft: yes
 image: "1758576848737.jpg"
 ---

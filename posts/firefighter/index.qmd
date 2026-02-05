@@ -1,0 +1,10 @@
+---
+title: "Firefighter"
+format: html
+author: "Rayne Aurit"
+date: "2026-02-04"
+categories: [Art,Blog]
+image: "FirefighterLadder.png"
+draft: yes
+---
+

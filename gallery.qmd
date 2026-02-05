@@ -8,3 +8,12 @@ format: html
 
 ![Frog Collage: April, 2025](posts/frog-collage/Frog.jpg){.lightbox}
 :::
+
+# Photography
+![Capital Firefighter: February, 2026](posts/firefighter/FirefighterLadder.png){.lightbox}
+
+::: {layout-ncol=2}
+![Baltimore Renaissance: October, 2025](posts/baltimore-sunset/BaltimoreRenaissance.jpg){.lightbox}
+
+![Driftwood Beach: June, 2025](posts/driftwood-beach/DriftwoodBeach.jpg){.lightbox}
+:::

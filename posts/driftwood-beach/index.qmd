@@ -4,7 +4,7 @@ format: html
 author: "Rayne Aurit"
 date: "2026-01-31"
 categories: [Art]
-image: "AllTheWorldsAStage.jpg"
+image: "DriftwoodBeach.jpg"
 draft: yes
 ---
 

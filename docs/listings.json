@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/user-guide/index.html",
       "/posts/frog-collage/index.html",
       "/posts/shade/index.html",
       "/posts/first-post/index.html"

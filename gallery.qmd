@@ -9,6 +9,8 @@ format: html
 ![Frog Collage: April, 2025](posts/frog-collage/Frog.jpg){.lightbox}
 :::
 
+![All the World's a Stage: May, 2025](posts/all-the-worlds-a-stage/AllTheWorldsAStage.jpg){.lightbox}
+
 # Photography
 ![Capital Firefighter: February, 2026](posts/firefighter/FirefighterLadder.png){.lightbox}
 

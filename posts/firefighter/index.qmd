@@ -8,3 +8,5 @@ image: "FirefighterLadder.png"
 draft: yes
 ---
 
+![LincolnFirefighter](FirefighterLadder.png)
+*Photography; Rayne Aurit, February, 2026*

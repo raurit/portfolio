@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rayne Aurit">
+<meta name="dcterms.date" content="2026-03-08">
+
+<title>User Guide on Forecasting COVID-19 Data – Rayne Aurit’s Portfolio</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-54b560df82c95bacbc668b301994f5f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rayne Aurit’s Portfolio</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../gallery.html"> 
+<span class="menu-text">Art Gallery</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../ResumeModern/CoverLetter.pdf"> 
+<span class="menu-text">NASA Cover Letter</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../ResumeModern/ResumeModern.pdf"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About Me</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/raurit"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/rayne-aurit-08538a29a/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">User Guide on Forecasting COVID-19 Data</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Projects</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rayne Aurit </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 8, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="forecasting-demonstration-using-covid-19-data" class="level1">
+<h1>Forecasting Demonstration using COVID-19 Data</h1>
+<p>This user guide will demonstrate how to attain data from COVID-19 using the <code>covid19.analytics</code> package and 2 methods of forecasting with the <code>forecast</code> package (using ARIMA) and the <code>prophet</code> package, a procedure used for forecasting created by Facebook. Before applying the concepts of time-series forecasting, here are a few notes and definitions to help in comprehending later steps in this guide:</p>
+<ol type="1">
+<li>In practicality, “forecasting” and “prediction” are used interchangeably. Forecasting is prediction but with an emphasis on time-series data.</li>
+<li>Time series can be dissected into seasonality, level, trend, and noise.</li>
+</ol>
+<ul>
+<li><strong>seasonality</strong>: “short-term cyclical behavior”</li>
+<li><strong>level</strong>: “average value of the series”</li>
+<li><strong>trend</strong>: “change in the series from one period to the next”</li>
+<li><strong>noise</strong>: “random variation that results from measurement error or other causes”</li>
+</ul>
+<ol start="3" type="1">
+<li>These components as seen in (2) can either be multiplicative or additive, which describes the relationship between the components to achieve the response value.</li>
+</ol>
+<p><span class="citation" data-cites="shmueliPracticalTimeSeries2024">Shmueli and Polak (<a href="#ref-shmueliPracticalTimeSeries2024" role="doc-biblioref">2024</a>)</span></p>
+<section id="open-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="open-rstudio">Open RStudio</h2>
+<p>If you have not yet installed RStudio or would like to update your version of RStudio, visit the following link: <a href="https://posit.co/downloads/">https://posit.co/downloads/</a>. Create a new R script.</p>
+<p><img src="rScript.png" class="img-fluid" width="100"></p>
+</section>
+<section id="install-and-load-packages" class="level2">
+<h2 class="anchored" data-anchor-id="install-and-load-packages">Install and Load Packages</h2>
+<p>Install the following packages<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> if you have not already:</p>
+<ul>
+<li><code>covid19.analytics</code>
+<ul>
+<li>for the purposes of this guide, this package will be used to access various data sets about COVID-19</li>
+</ul></li>
+<li><code>dplyr</code>
+<ul>
+<li>dplyr is a R standard for creating data pipelines and transforming data frames to fit the desired format</li>
+</ul></li>
+<li><code>lubridate</code>
+<ul>
+<li>dates often require special packages for processing, such as noting the different possible forms that dates can come in (mm/dd/yyyy, yy/mm/dd, etc.). This belongs under the package <code>tidyverse</code></li>
+</ul></li>
+<li><code>ggplot2</code>
+<ul>
+<li>popular package for data visualization. For exploration of other uses of <code>ggplot2</code>, visit this <a href="https://rstudio.github.io/cheatsheets/data-visualization.pdf">cheat sheet</a>, also included in <code>tidyverse</code></li>
+</ul></li>
+<li><code>forecast</code>
+<ul>
+<li>package that brings forecasting ability</li>
+</ul></li>
+<li><code>readr</code>
+<ul>
+<li>also belonging underneath <code>tidyverse</code>, <code>readr</code> allows for easier manipulation of data frames</li>
+</ul></li>
+<li><code>skimr</code>
+<ul>
+<li>package used to skim data frames for basic data exploration and suggestion of the forms of the data used. It gives summary statistics of each column in a data frame</li>
+</ul></li>
+<li><code>prophet</code>
+<ul>
+<li>package that allows for robust additive forecasting, created by Facebook</li>
+</ul></li>
+<li><code>tseries</code>
+<ul>
+<li>package which will be used for checking assumptions for time series data</li>
+</ul></li>
+</ul>
+<p>To install packages, use the function <code>install.packages()</code> with the package name in quotation marks. Be sure to comment out this code afterwards so it doesn’t repeatedly install the code if you run all of the code at once.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(covid19.analytics)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(forecast)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(skimr)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(prophet)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tseries)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>For a quick temperature check on which packages have been added to the active session and their order, execute the <code>search()</code> function without any parameters. You can use this to validate that you have all of the packages listed above. The output below is of this exact book and may not reflect the packages in your active session.</p>
+<pre><code> [1] ".GlobalEnv"                "package:tseries"          
+ [3] "package:prophet"           "package:rlang"            
+ [5] "package:Rcpp"              "package:skimr"            
+ [7] "package:readr"             "package:forecast"         
+ [9] "package:ggplot2"           "package:lubridate"        
+[11] "package:dplyr"             "package:covid19.analytics"
+[13] "tools:rstudio"             "package:stats"            
+[15] "package:graphics"          "package:grDevices"        
+[17] "package:utils"             "package:datasets"         
+[19] "package:methods"           "Autoloads"                
+[21] "package:base"   </code></pre>
+</section>
+<section id="load-in-data" class="level2">
+<h2 class="anchored" data-anchor-id="load-in-data">Load in Data</h2>
+<p>In the <code>covid19.analytics</code> package, there are a few data sets that can be loaded in and used for easy examples. This user guide will demonstrate forecasting using its Canada data, accessed through <code>covid19.Canada.data()</code>. If you plan to use a different data set, make sure that the data suits the form required for time series analysis. Future sections will explain how to check or obtain the correct format.</p>
+<p><code>covid19.Canada.data()</code> is retrieved from <a href="https://health-infobase.canada.ca/covid-19/">this website</a>. We will be using forecasting to predict the number of new cases over time in Ontario, Canada, so the following variables are of importance:</p>
+<ul>
+<li><code>prname</code>
+<ul>
+<li>The name of the providence that the data is located in</li>
+<li>type: character</li>
+</ul></li>
+<li><code>totalcases</code>
+<ul>
+<li>The number of total cases of COVID-19</li>
+<li>type: character</li>
+</ul></li>
+<li><code>date</code>
+<ul>
+<li>The date of the beginning of each week, with each observation including data accumulated over the week prior</li>
+<li>type: character</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We will have to do some type casting to assure that the variables are the correct types. The total number of cases should not be listed as character and will need to be changed into numeric.</p>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="fu">covid19.Canada.data</span>())</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><code>skim(df)</code> goes variable by variable in <code>df</code> and displays the summary statistics depending on the type of variable used. While each variable will show its completeness, a numeric variable will show the mean, standard deviation, and percentile values and a character variable will display the minimum number of characters in the string, the maximum number of characters, the number of unique strings, and a few other features. In the date column of the Canada COVID-19 data frame, there are 0 in <code>n_missing</code>, and the <code>min</code> and <code>max</code> values are both at 10. This would indicate that each row has a value for date and it follows some variation of “dd/mm/yyyy” given each has 10 characters. See the next section on what to do in case the format does not match.</p>
+<p>If there is missingness in the data, visit this short <a href="https://www.geeksforgeeks.org/data-science/handling-missing-values-in-time-series-data/">guide</a>.</p>
+</section>
+<section id="cleaning-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="cleaning-the-data">Cleaning the Data</h2>
+<section id="date-format" class="level3">
+<h3 class="anchored" data-anchor-id="date-format">Date Format</h3>
+<p>Before being able to work with dates, you must have only one column for the date variable. If your data does not have date in one column and instead spreads out day, month, and year into multiple columns, you can use the <code>dplyr</code> package and the following step to combine columns:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">date=</span><span class="fu">paste</span>(year, month, day, <span class="at">sep =</span> <span class="st">"-"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>where <code>df</code> is the name of your data frame, <code>date</code> is the name of the new column that you are forming, the first three parameters of <code>paste</code> are the names of your existing columns of date data, and <code>sep = "-"</code> indicates that each field will be separated with a hyphen (<span class="citation" data-cites="kuruiTidyverseTimeSeries2025">Kurui (<a href="#ref-kuruiTidyverseTimeSeries2025" role="doc-biblioref">2025</a>)</span>). These should be modified to fit your use case.</p>
+<p>Next, the package <code>lubridate</code> is best for working with dates in R. Once your <code>date</code> column properly includes the right content, it is important to ensure that they are in the correct format. For working with time-series data, it is best practice to use <code>ymd</code> (year-month-day) format. This format allows the data to be sorted to form chronological order.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>date <span class="ot">&lt;-</span> <span class="fu">ymd</span>(df<span class="sc">$</span>date)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>To explain how this format is best, let’s say dates were in the day-month-year format instead. Running a basic sort function would order by whether it is the first, second, third, etc. day of the month, then by what month it is, and then finally by year. The inverse would sort by year first, then month, then day. The end result is a list of date which are in proper chronological order.</p>
+<p>Additionally, it makes more logical sense! The first item in a date sequence should be the most important, which is the year. Often, you can tell more about the context of a date given the year than the month or what day of the month it is.</p>
+<blockquote class="blockquote">
+<p>“Europeans get it wrong. Americans get it wrong. Only computer scientists get it right.” - <em>Dr.&nbsp;Chris Bourke, my Computing II professor, about date formats</em></p>
+</blockquote>
+</section>
+<section id="transforming-other-variables" class="level3">
+<h3 class="anchored" data-anchor-id="transforming-other-variables">Transforming Other Variables</h3>
+<p>Create a new data frame as a subset of your previous data frame, selecting only necessary columns. This makes the rest of the steps simpler when there is less information to comb through. The code below is an example of how to use <code>dplyr</code> to transform data to a workable state.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ontario_df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(prname <span class="sc">==</span> <span class="st">"Ontario"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(date) <span class="sc">%&gt;%</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">totalcases =</span> <span class="fu">parse_number</span>(totalcases, <span class="at">na =</span> <span class="fu">c</span>(<span class="st">"-"</span>, <span class="st">""</span>))) <span class="sc">%&gt;%</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(totalcases)) <span class="sc">%&gt;%</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">new_cases =</span> <span class="fu">c</span>(<span class="cn">NA</span>, <span class="fu">diff</span>(totalcases))) <span class="sc">%&gt;%</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(new_cases)) <span class="sc">%&gt;%</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(date,new_cases)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>In this example, we are filtering based on the province name “Ontario”, which selects all rows in the data frame that belong to Ontario, then sorting by the date. The number of total cases was originally listed as a character variable, so the next few lines are used to parse the number from <code>totalcases</code> and filtering out any missing values. If the variable you would like to analyze does not have this error, you do not need to include parsing.</p>
+<p>Additionally, the question that we are interested in this case is not the total number of cases, but the number of new cases. To achieve this, a new column was formed, <code>new_cases</code>, which was then calculated taking the difference between observations of total cases. Sorting via date is important before this step to guarantee that the <code>new_cases</code> shows the difference between the correct dates and not arbitrarily which rows are positioned next to each other.</p>
+<p>Lastly, <code>select()</code> is used to isolate which columns are being used later during forecasting.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To check, use <code>skim()</code> and <code>head()</code> again to ensure that your data is in the correct form and that the transformation did not create any new holes or transformed the data in a way that was not intended.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="stationarity" class="level2">
+<h2 class="anchored" data-anchor-id="stationarity">Stationarity</h2>
+<p>Most statistical methods of forecasting require an exploration of the property <strong>stationarity</strong>, including ARIMA, which will be discussed later. In short, if data are stationarity, it means that the mean, variance, autocorrelation structure, and others stay constant over time (<span class="citation" data-cites="StationarityDifferencingTime"><span>“Stationarity and Differencing of Time Series Data”</span> (<a href="#ref-StationarityDifferencingTime" role="doc-biblioref">n.d.</a>)</span>). There are multiple ways to investigate this in a data set, both informally and formally. In this user guide, we will go over the Augmented Dickey-Fuller Test (ADF). Others can be found <a href="https://www.geeksforgeeks.org/r-machine-learning/stationarity-of-time-series-data-using-r/">here</a>.</p>
+<section id="augmented-dickey-fuller-adf-test" class="level3">
+<h3 class="anchored" data-anchor-id="augmented-dickey-fuller-adf-test">Augmented Dickey-Fuller (ADF) test</h3>
+<p>The ADF test is a formal test to see if time series data is stationary, where the null hypothesis says the data is non-stationary and the alternative hypothesis says the data is stationary (<span class="citation" data-cites="mushtaqAugmentedDickeyFuller2011">Mushtaq (<a href="#ref-mushtaqAugmentedDickeyFuller2011" role="doc-biblioref">2011</a>)</span>).</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>adf_test <span class="ot">&lt;-</span> <span class="fu">adf.test</span>(ontario_df<span class="sc">$</span>new_cases)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"ADF Test:"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(adf_test)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The following output was obtained through running the code:</p>
+<pre><code>[1] "ADF Test:"
+
+    Augmented Dickey-Fuller Test
+
+data:  ontario_df$new_cases
+Dickey-Fuller = -3.9025, Lag order = 6,
+p-value = 0.0148
+alternative hypothesis: stationary</code></pre>
+<p>As we can see above, the p-value resulting from the test is less than <span class="math inline">\(\alpha = 0.05\)</span>, which means that we are 95% confident that we reject the null hypothesis, which stated that the data is non-stationary.</p>
+</section>
+</section>
+<section id="forecast-new-data" class="level2">
+<h2 class="anchored" data-anchor-id="forecast-new-data">Forecast New Data</h2>
+<section id="r-package-forecast" class="level3">
+<h3 class="anchored" data-anchor-id="r-package-forecast">R Package <code>forecast</code></h3>
+<p>The demonstration with the <code>forecast</code> package will be consistent with what is known as Autoregressive Integrated Moving Average (ARIMA). The <code>forecast</code> package is capable of doing other methods of time series forecasting, but we will focus on ARIMA for simplicity’s sake.</p>
+<section id="decomposition" class="level4">
+<h4 class="anchored" data-anchor-id="decomposition">Decomposition</h4>
+<p>The first step is to decompose the data. This shows the breakdown of the time series data by the overall trend, seasonal shifts, and discerned randomness. Reviewing the notes at the beginning of the guide, this mirrors the components of time-series data (level, trend, seasonality, noise).</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ts_cases <span class="ot">&lt;-</span> <span class="fu">ts</span>(ontario_df<span class="sc">$</span>new_cases, <span class="at">frequency =</span> <span class="dv">24</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>d<span class="ot">&lt;-</span><span class="fu">decompose</span>(ts_cases, <span class="st">"multiplicative"</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(d)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>d<span class="ot">&lt;-</span><span class="fu">decompose</span>(ts_cases, <span class="st">"additive"</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(d)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Looking at these plots, Figures 1 and 2, can provide insight on the structure of your time data. In the case of the COVID-19 data on Ontario, Canada, we can see that there is a lot of noise with a consistent spike around the halfway mark when a new strain of COVID-19 caused an influx of cases.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="decomp.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure 1: Decomposition of new_cases through the raw, observed data, overall trend, seasonality, and randomness with multiplicative components"><img src="decomp.png" class="img-fluid figure-img" alt="Figure 1: Decomposition of new_cases through the raw, observed data, overall trend, seasonality, and randomness with multiplicative components"></a></p>
+<figcaption>Figure 1: Decomposition of <code>new_cases</code> through the raw, observed data, overall trend, seasonality, and randomness with multiplicative components</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="decompadd.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure 1: Decomposition of new_cases through the raw, observed data, overall trend, seasonality, and randomness with additive components"><img src="decompadd.png" class="img-fluid figure-img" alt="Figure 1: Decomposition of new_cases through the raw, observed data, overall trend, seasonality, and randomness with additive components"></a></p>
+<figcaption>Figure 1: Decomposition of <code>new_cases</code> through the raw, observed data, overall trend, seasonality, and randomness with additive components</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="additive-v.-multiplicative" class="level4">
+<h4 class="anchored" data-anchor-id="additive-v.-multiplicative">Additive v. Multiplicative</h4>
+<p>The difference between additive and multiplicative time-series is illustrated by these graphs, but more clearly with the equations below.</p>
+<p><strong>Additive:</strong> <span class="math display">\[y_t = Level + Trend + Seasonality + Noise\]</span> <strong>Multiplicative:</strong> <span class="math display">\[y_t = Level \times Trend \times Seasonality \times Noise\]</span> The largest difference between the two is how the terms interact with each other (<span class="citation" data-cites="shmueliPracticalTimeSeries2024">Shmueli and Polak (<a href="#ref-shmueliPracticalTimeSeries2024" role="doc-biblioref">2024</a>)</span>). When seasonality tends to scale with the model, choose a multiplicative decomposition. In the terms of COVID-19 data, we would opt for multiplicative decomposition as research has allotted for better tactics to mitigate the transmission of the disease and scale back the classification from global pandemic.</p>
+</section>
+<section id="fitting-arima" class="level4">
+<h4 class="anchored" data-anchor-id="fitting-arima">Fitting ARIMA</h4>
+<p>Lastly, all that is left is to fit the model and forecast. The <code>auto.arima()</code> function takes in one vector, which will be the variable that you are trying to predict. Do not pass in your date or time variable. For the <code>forecast()</code> function, the three parameters used in the example are as follows:</p>
+<ul>
+<li><code>object</code>: the object created by the <code>auto.arima()</code> function</li>
+<li><code>h</code>: the number of periods for forecasting (weekly)</li>
+<li><code>model</code>: which model was used (“Arima”, etc.)</li>
+</ul>
+<p>more parameters for customization can be found in the <code>forecast</code> documentation.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">auto.arima</span>(ontario_df<span class="sc">$</span>new_cases)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>forecast_8 <span class="ot">&lt;-</span> <span class="fu">forecast</span>(fit, <span class="at">h =</span> <span class="dv">12</span>, <span class="at">model =</span> <span class="st">"Arima"</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>forecast_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(forecast_8)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+</section>
+<section id="r-package-prophet" class="level3">
+<h3 class="anchored" data-anchor-id="r-package-prophet">R Package <code>prophet</code></h3>
+<p>When using <code>prophet</code>, it is good to keep in mind that is only for <strong>additive</strong> models, written that the user is able to “get a reasonable forecast on messy data with no manual effort” according to its documentation. True to its statement, there are only three functions required to set up a forecast: <code>prophet()</code>, <code>make_future_dataframe()</code>, and <code>predict()</code>.</p>
+<ul>
+<li><code>prophet()</code> requires a data frame with two columns, <code>ds</code> and <code>y</code>. The names are required, and the code below shows how to rename a data frame to fit the requirements. Additionally, the rest of the parameters can be toggled, assumed false unless written as true. These are <code>yearly.seasonality</code>, <code>weekly.seasonality</code>, and <code>daily.seasonality</code>.</li>
+<li><code>make_future_dataframe()</code> requires the object created by <code>prophet()</code>, the number of periods, and what the periods are. In the example, there will be 12 periods with each period being a week.</li>
+<li><code>predict()</code> requires the outputted objects of the previous functions.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Optional but encouraged: using <code>select()</code> to isolate specific columns of the forecasted data frame. The columns selected will be used for plotting in the next section.</p>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>prophet_df <span class="ot">&lt;-</span> ontario_df <span class="sc">%&gt;%</span> </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">ds =</span> date, <span class="at">y =</span> new_cases)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">prophet</span>(prophet_df, <span class="at">yearly.seasonality =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>future <span class="ot">&lt;-</span> <span class="fu">make_future_dataframe</span>(m, <span class="at">periods =</span> <span class="dv">12</span>, <span class="at">freq =</span> <span class="st">"week"</span>)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>forecast_p <span class="ot">&lt;-</span> <span class="fu">predict</span>(m, future)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>forecast_p_df <span class="ot">&lt;-</span> forecast_p <span class="sc">%&gt;%</span> <span class="fu">select</span>(ds, yhat, yhat_lower, yhat_upper)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+</section>
+<section id="plot" class="level2">
+<h2 class="anchored" data-anchor-id="plot">Plot</h2>
+<p>For comparison, plot both the forecasted and original data. You can copy the following code and change parameters to fit the naming convention of your own code. Both plots include the following:</p>
+<ol type="1">
+<li><code>ggplot()</code> to initialize the plots being created</li>
+<li><code>geom_ribbon()</code>, which graphs the bands of confidence around the forecasted data. The parameters of <code>ymin</code> and <code>ymax</code> differ between the two as the outputs of both forecasting packages are different. <code>length.out</code> should match the parameter <code>h</code> when used in the function <code>forecast</code>. Pay attention to the difference in <code>x</code> for both as well.</li>
+<li><code>geom_line()</code> with the color black is the same for both. This is your original raw data that will be used for visual comparison with the forecasted data.</li>
+<li><code>geom_line()</code> with the color red is the point forecasted data. Note that the input for <code>x</code> should be the same as it is in <code>geom_ribbon()</code> for both while <code>y</code> reflects the point estimate output of each method.</li>
+<li><code>labs()</code> are for the axis labels and graph title. Change the strings to fit the description of your data.</li>
+<li><code>theme_minimal()</code> is for aesthetic purposes only.</li>
+</ol>
+<section id="code-for-plotting-results-from-forecast" class="level3">
+<h3 class="anchored" data-anchor-id="code-for-plotting-results-from-forecast">Code for plotting results from <code>forecast</code></h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(<span class="at">data =</span> forecast_df,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>              <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">seq</span>(<span class="fu">max</span>(ontario_df<span class="sc">$</span>date), <span class="at">by =</span> <span class="st">"week"</span>,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>                          <span class="at">length.out =</span> <span class="dv">12</span>), <span class="at">ymin =</span> Lo<span class="fl">.95</span>, <span class="at">ymax =</span> Hi<span class="fl">.95</span>),</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>              <span class="at">fill =</span> <span class="st">"lightblue"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> ontario_df,</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>            <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> new_cases),</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> forecast_df,</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>            <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">seq</span>(<span class="fu">max</span>(ontario_df<span class="sc">$</span>date),</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>                        <span class="at">by =</span> <span class="st">"week"</span>,</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>                        <span class="at">length.out =</span> <span class="dv">12</span>),</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>                <span class="at">y =</span> Point.Forecast),</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>            <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Ontario Weekly COVID Cases Forecast (forecast)"</span>,</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"New Cases"</span>,</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Date"</span>) <span class="sc">+</span></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="code-for-plotting-results-from-prophet" class="level3">
+<h3 class="anchored" data-anchor-id="code-for-plotting-results-from-prophet">Code for plotting results from <code>prophet</code></h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(<span class="at">data =</span> forecast_p_df,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>              <span class="fu">aes</span>(<span class="at">x =</span> ds, <span class="at">ymin =</span> yhat_lower, <span class="at">ymax =</span> yhat_upper),</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">fill =</span> <span class="st">"lightblue"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> ontario_df,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>            <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> new_cases),</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> forecast_p_df,</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>            <span class="fu">aes</span>(<span class="at">x =</span> ds, <span class="at">y =</span> yhat),</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Ontario Weekly COVID Cases Forecast (prophet)"</span>,</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Date"</span>, <span class="at">y =</span> <span class="st">"New Cases"</span>) <span class="sc">+</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+</section>
+<section id="compare" class="level2">
+<h2 class="anchored" data-anchor-id="compare">Compare</h2>
+<section id="demonstration" class="level3">
+<h3 class="anchored" data-anchor-id="demonstration">Demonstration</h3>
+<p>These two plots are examples of ones generated using <code>forecast</code> then <code>prophet</code>. The largest difference that we can see is the way that each handles new predictions. Figure 4 using <code>prophet</code> overlays predictions on top of the current data whereas <code>forecast</code> exclusively predicts beyond the current data. This can be manually changed by editing the limits on time for prediction when plotting. In both, the confidence bands in blue showcase that the direction is not conclusive. This could be due to the fact that there are multiple strands of COVID-19 with different transmission rates that have appeared over time, adding more noise to the forecast. Additionally, there are less tests for COVID-19 as vaccines became more widely spread and it was seen as less of a threat as when it first was deemed a global pandemic. Many other external factors could contribute to the near erasure of high inflections in new cases.</p>
+<p>Examining <code>forecast</code> more, the plot is more realistic simply because the point prediction does not go below zero. The previous trends in seasonality in <code>prophet</code> seems to be forced onto the new data, showing that there is going to be negative new cases, which is impossible since the measure of new cases does not take into account active cases. When someone tests positive for COVID-19, they are added to the new cases, but are not checked up on and removed from the count afterwards.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="forecast.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure 3: Forecasted plot of COVID-19 weekly new cases in Ontario, Canada using forecast"><img src="forecast.png" class="img-fluid figure-img" alt="Figure 3: Forecasted plot of COVID-19 weekly new cases in Ontario, Canada using forecast"></a></p>
+<figcaption>Figure 3: Forecasted plot of COVID-19 weekly new cases in Ontario, Canada using <code>forecast</code></figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="prophet.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure 4: Forecasted plot of COVID-19 weekly new cases in Ontario, Canada using prophet"><img src="prophet.png" class="img-fluid figure-img" alt="Figure 4: Forecasted plot of COVID-19 weekly new cases in Ontario, Canada using prophet"></a></p>
+<figcaption>Figure 4: Forecasted plot of COVID-19 weekly new cases in Ontario, Canada using <code>prophet</code></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="general-guidance" class="level3">
+<h3 class="anchored" data-anchor-id="general-guidance">General Guidance</h3>
+<p>When applying to other scenarios, remember forecasting is a function of existing data to predict future data. The more data that exists, the more narrow confidence bands will be. When examining the reliability of forecasting, it is best to be aware of the data that you are working with. The biggest issue seen in the demonstration was the predictions going below zero, which goes against the form of the <code>new_cases</code> variable. To explore issues like this, know the bounds of your data and whether or not forecasts break those hard boundaries. Forecasting always comes with the concern that you are extrapolating, therefore the reliability will always be in question as no one knows the future. The further you forecast from the original raw data, the more the reliability will decrease.</p>
+
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-kuruiTidyverseTimeSeries2025" class="csl-entry" role="listitem">
+Kurui, Moses. 2025. <span>“Tidyverse Time Series Analysis in r: Complete Guide. Codepointtech.com.”</span> September 6, 2025. <a href="https://codepointtech.com/mastering-tidyverse-for-time-series-analysis-in-r/">https://codepointtech.com/mastering-tidyverse-for-time-series-analysis-in-r/</a>.
+</div>
+<div id="ref-mushtaqAugmentedDickeyFuller2011" class="csl-entry" role="listitem">
+Mushtaq, Rizwan. 2011. <span>“Augmented Dickey Fuller Test.”</span> Rochester, <span>NY</span>: Social Science Research Network. <a href="https://doi.org/10.2139/ssrn.1911068">https://doi.org/10.2139/ssrn.1911068</a>.
+</div>
+<div id="ref-shmueliPracticalTimeSeries2024" class="csl-entry" role="listitem">
+Shmueli, Galit, and Julia Polak. 2024. <em>Practical Time Series Forecasting with r: A Hands-on Guide [3rd Edition]</em>. Axelrod Schnall Publishers.
+</div>
+<div id="ref-StationarityDifferencingTime" class="csl-entry" role="listitem">
+<span>“Stationarity and Differencing of Time Series Data.”</span> n.d. Accessed March 7, 2026. <a href="https://people.duke.edu/~rnau/411diff.htm">https://people.duke.edu/~rnau/411diff.htm</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Documentation for each package can be found in the CRAN at these links: <a href="https://cran.r-project.org/web/packages/covid19.analytics/readme/README.html">covid19.analytics</a>, <a href="https://cran.r-project.org/web/packages/dplyr/readme/README.html">dplyr</a>, <a href="https://rstudio.github.io/cheatsheets/html/lubridate.html">lubridate</a>, <a href="https://ggplot2.tidyverse.org/">ggplot2</a>, <a href="https://www.rdocumentation.org/packages/forecast/versions/9.0.1">forecast</a>, <a href="https://cran.r-project.org/web/packages/readr/readme/README.html">readr</a>, <a href="https://www.rdocumentation.org/packages/skimr/versions/2.2.2">skimr</a>, <a href="https://facebook.github.io/prophet/">prophet</a>, <a href="https://r-packages.io/packages/tseries">tseries</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

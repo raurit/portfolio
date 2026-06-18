@@ -1,9 +1,8 @@
 ---
 title: "Stance on Artificial Intelligence"
 author: "Rayne Aurit"
-date: "2026-01-15"
+date: "2026-06-18"
 categories: [Blog]
-draft: true
 ---
 
 This post will serve as the starting point for my opinion on Artificial Intelligence. This opinion will be guaranteed to change over time as the technology becomes more sophisticated and more people become aware of its uses. I am eager to learn how it will change as I continue to work with Artificial Intelligence as someone who trains machine learning models and helps design AI agent frameworks.
@@ -18,7 +17,7 @@ Across the United States, in this past year, there has been a concerted effort t
 
 ## Google and Data Centers
 
-Google's data center went live this past year after a few years of development alongside interstate I-80 and 56th street. I am curious how Lincoln residents will feel the effects of the data center in these coming years in areas such as water quality and the cost of electricity. As a freshman, the topic of the local data center came up in discussion in my science literacy course underneath the College of Agriculture and Natural Resources. The unit that we were working on the time was water conservation after previously discussing plastic pollution. We were asked a question on if anybody knew if the data center was still being built as the site looked dormant for a long period of time, and the answer was yes. Originally, I felt proud of being the one to be able to answer the question and was aware about the development, though extremely naive and unaware of the impact of data centers in other areas of the country. I recalled Google as a great company with wonderful work experience. Those who were hired by Google were the best of the best and their facilities looked like adult playgrounds when images of them were introduced to me in middle school.
+Google's Lincoln data center went live this past year after a few years of development alongside interstate I-80 and 56th street. I am curious how Lincoln residents will feel the effects of the data center in these coming years in areas such as water quality and the cost of electricity. As a freshman, the topic of the local data center came up in discussion in my science literacy course underneath the College of Agriculture and Natural Resources. The unit that we were working on the time was water conservation after previously discussing plastic pollution. We were asked a question on if anybody knew if the data center was still being built as the site looked dormant for a long period of time, and the answer was yes. Originally, I felt proud of being the one to be able to answer the question and was aware about the development, though extremely naive and unaware of the impact of data centers in other areas of the country. I recalled Google as a great company with wonderful work experience. Those who were hired by Google were the best of the best and their facilities looked like adult playgrounds when images of them were introduced to me in middle school.
 
 Since then, they have notably taken off language in their corporate code of conduct. "Do no evil" was replaced with "Do the right thing." It is a small, but noticeable semantic difference. While right and wrong is ambiguous in many cases, the notion of doing "no evil" brings about the mindset of avoiding harm at any costs. Doing "the right thing" may allow Google to weigh the costs and benefits of certain actions. If an action does "evil" but is arguably for the greater good and is a "right thing," then it is an action that is justified within the code of conduct, allowing for "evils" to escape the same amount of scrutiny as before.
 
@@ -40,6 +39,8 @@ I am not sure what measure of improvement is evaluated when he says "improved," 
 
 To define political correctness in this case, it is often negatively associated with being "woke," which is to be aware of the social biases and systemic inequalities towards certain groups of people whether it is due to their race, gender, or sexual orientation. It usually is said in reference of people who are more strict about the specific terms they use and their social openness to other groups of people. Someone would be called "woke" for including their pronouns in their bio or on their name tag or calling out people who misuse hateful terms. As being politically correct or woke- I am treating these words as interchangeable- was changed in the system prompt, it would make sense that Grok's interpretation of it to be the opposite of aware of social biases, which is to further the social biases.
 
+This ease of dictating bias in model responses is of great concern, especially when legislation can force certain types of responses.
+
 ## Grok, A Case Study in Deepfakes
 
 Within the past few weeks, X has had another instance where Grok, and by proxy the entire social media platform, has become unsafe to the typical user. The issue lies once again with system prompts, but the effect was more demonstrated in images rather than hateful rhetoric.
@@ -50,13 +51,43 @@ This problem exists across all forms of generative AI. People's likeness and ima
 
 ## The Art of... Art
 
-Though I am a student double majoring in fields that heavily use numbers and computer applications, I do spend a lot of my time creating art, reading books, and writing stories. It's a release, the journey far more important than the end. It is like writing, where the thought processes and the years of experience leading to the end product far more important than what is written. You exercise your brain, make mistakes and learn from them. 
+Though I am a student double majoring in fields that heavily use numbers and computer applications, I do spend a lot of my time creating art, reading books, and writing stories. It's a release, the journey far more important than the end. It is like writing, where the thought processes and the years of experience leading to the end product far more important than what is written. You exercise your brain, make mistakes and learn from them. I believe that we, as a society, have gotten so focused on output and creating the next best thing that we forget that the joy of being a creator is the joy of creation, the doing and not the finished result hung up on a wall. Those outside creative spaces only see the output. That is their valuation of the arts, through the physical, visual means. 
 
-My passion for art came about during the COVID-19 pandemic. 
+So, while my art is available on the website in the gallery, my journey is far more important when it comes to the work that I make nowadays. My passion for art came about during the COVID-19 pandemic. Previously, I had been an active kid, someone who did track and basketball alongside marching band. When COVID hit, I instead was stuck inside and lost a lot of motivation to continue the sports. I was a nerd in sports, much more focused on mathematical problems and music than popular trends or fitting in with the cliques of girls at lunch. I did not have social media, nor did I want to engage with the superficial culture of Elkhorn South where some groups of people wore Lululemon and near full faces of makeup. My brain still needed much stimulation, so I dedicated myself to creating art.
+
+I painted mountains, fantasy characters and creatures, lakes and oceans, galaxies, and much more. I took inspiration from Bob Ross, created my own characters, learned portraits and perspective. It gave me purpose while the rest of the world was shut out. I created my own when the one at my feet was closed off and threatening. Art is the expression of all of the previous art that I have made mixed with my current interests and experiences. AI can never recreate that symbolism and what art means to me, and what art means to other people.
+
+Simple validation of the quality of art and creating something instantly is hollow. The journey to making quality art is rich.
 
 ## Is This a Recession Indicator?
 
 I commonly see this phrase online, and even more I see the "enshittification" of the internet and the world around us. Everything is a subscription now instead of paying for these once. Even worse, what you pay for isn't owned by you.
+
+While first writing this section, I was focused on the AI bubble, the top seven companies trading with each other and bloating their value to cover up the lack of financial growth of the rest of the United States, yet looking at this with fresh eyes months later and conversations more recent, I want to focus more on the end goal of AI in terms of wealth distribution. As is, the lack of regulation and the shortening of jobs for the middle class will extenuate the wealth gap between those who have control over artificial intelligence and its applications and those who are competing with it.
+
+Constant headlines of recessions, though, tend to lack much substance. Recessions, or depressions are only labeled in hindsight. We will never know the true economic consequences until after they have hit or crashed certain areas of the economy. You can identify an economic bubble, but never know when it will pop.
+
+## The second F in Waste, Fraud, and Abuse
+
+With generative AI, it is much more easy to create realistic-looking scams. You could be talking to bots without even realizing it while their identities are obscured or masked as some reliable and well-known company. Currently, a big tell for overseas scamming operations is through an obvious accent, the lack of knowledge about the person who is being scammed, or lack of knowledge on the proper formal processes which would otherwise exist if the company was really, let's say, Amazon or Verizon. With advances in AI, these indicators can be erased. Voice changers can change the inflections and tones of voices to make them sound more local to where the scam is taking place. Emails created with AI could look more and more like the real deal and be executed over long term without using human capital. 
+
+The line between what is real and fake continues to blur, most alarmingly in areas where authenticity matter most.
+
+I tend to only call back numbers that I do not recognize if they leave a voice message and they know me by name. Otherwise, I consider them spam calls. If my specific medical provider suddenly left a voice message with my real name, and that ended up being a scam call, I could give over sensitive information without a clue. 
+
+Additionally, there is a worry in Academia and research as data becomes more easy to fabricate or alter. Results that would otherwise be non-significant could be changed in order to display as a new discovery when, in reality, it was more confirmation of what has already been proven. This concern could result in new methods of data verification that do not exist currently. As of now, the authenticity is dependent on the honor of the researcher, innocent until proven guilty. While those who manipulate their data will eventually be found out as their research is unable to be replicated, it still has various levels of harmful consequences. Studies that have the most eye-catching headlines become popular, often with the public never following up on whether or not the study was later found out to be peer-reviewed and widely accepted by its respective scientific field.
+
+## Investment into Human Intelligence
+
+Intelligence, though it should not be viewed as such, could be considered a finite resource, a trade off when in regards to artificial intelligence. Why would someone go through years of schooling to become an expert in a subject when AI can be trained with data and replicate the same knowledge without needing to spend hours committing it to memory? Every time someone asks AI to do a task instead of doing it on their own, they are losing out on the opportunity to build a skill of doing the task that the AI was asked to do. Of course, there are some menial tasks that do not require much exertion of intelligence that I considered plausible uses of AI. However, when asking AI over and over to correct for spelling mistakes, you do not put as much energy into learning how to spell and instead use AI as a crutch. This could have a more drastic effect if you apply it to essential tasks. 
+
+Intelligence and critical thinking are skills, muscles, that must be used consistently.
+
+School is one of the last areas where conversational AI should be used. When in school, you are supposed to be actively learning. AI does not need to learn, so asking AI to complete homework assignments is at the cost of your own learning. Additionally, teachers need to be able to accurately assess whether or not that you are able to use the skills taught by the class and complete tasks that would be required of someone of that skill set, not AI. A teacher or professor does not need to know AI's ability to execute something. They are far more interested in the *student's* unassisted ability. 
+
+At the very least, if I were a professor, that is what I would be more interested in. If the task were to assess how someone is able to use AI, that is a different scenario.
+
+Additionally, in terms of not being able to develop the skills, someone may become reliant on the technology. If the skills are never developed but required, then AI becomes a constant crutch. In some cases, the crutch is negligible. In other cases, heavy use of AI at such an early age could become detrimental for critical thinking skills and operating as a functional human being. 
 
 # Benefits of Artificial Intelligence
 
@@ -71,3 +102,21 @@ This is the inherent side effect of most technological advancements. Instead of 
 The middle ground of computer science and statistics falls right into either programming languages such as R or, more specifically, using machine learning algorithms to analyze data and find hidden patterns. The second semester of my sophomore year, I took the course "Intro to Machine Learning" underneath the school of computing. This semester I am taking "Statistical Learning" underneath the statistics department. I imagine that the content will be the same but the methods and details discussed will be different. The Machine Learning class used Zybooks, an online book application that made the class be able to be taken asynchronously. In contrast, Statistical Learning has no online book to use, purely class discussion. Instead of doing syllabus day, we delved right into a thorough review of Linear Algebra that was more call and response than a stratified lecture. While the class size is much smaller for the statistics department, I can already see the difference between the details of which the content will focus on. Where Intro to Machine Learning remained on the simple python application of machine learning, Statistical Learning will offer much more of the mathematical and statistical intricacies that allow machine learning to exist. Intro to Machine Learning did not even require statistics courses to have been taken before taking the course.
 
 Machine learning is a vast field with many different types of models that have differing applications depending on the types of data that they are applied to. Binary data is analyzed with a different model or method compared to data such as the price of a good or service. The benefits are vast. Machine Learning can recognize patterns within the data, and handle vast quantities of data and prediction used in many biological fields since they deal with complex structures that cannot be easily quantifiable without the processing power of a computer.
+
+## Gaps in Access
+
+When in situations where you do not have access to an expert or someone who can aid you in a specific situation, AI may become a helpful stand in. 
+
+In the first few days of this research experience at the University of Iowa, Dr. Elizabeth Kleiman had a conversation with us about our uses and the implications of AI in research. She asked us to come up with an example where you can show people that AI can hallucinate. I do not think we found a sound example that didn't require hard-to-reach expertise, none that is a quick demonstration to show the current limitations of generative AI, or particularly, conversational AI. 
+
+In the quest to find an example, we pretended that we were a kid who found a baby bird that had fallen out of a nest and may needed to be attended to, no parents or other similar birds in sight. The AI acted as a helpful guide, making sure that the user had taken steps to assure that taking in the bird was the last resort since they are wild animals and to go out and get external help. It understood that the user was not an expert and a veterinarian would have the best expertise to aid in the situation. When told that there was no expertise available, then it provided sound advice.
+
+In certain similar situations, it may be helpful to have AI act as a stand in as long as the consequences for AI getting it wrong are slim. Companies do not assume liability if you follow AI's advice.
+
+# Final Thoughts
+
+This post is a long-time coming. Most of it was written in mid January while the last few sections were finished during my REU at the University of Iowa. Since the project is on the ethics of emerging technologies with children, I expect my stance to either be reinforced or to change significantly as I continue to specifically interact with the field and its effects on particularly vulnerable persons.
+
+I am committing myself to write a small update at the end of this experience before entering my senior year, and particularly before graduate school.
+
+Despite the obvious ecological impact of using AI, there is a cost to yourself of using AI. It is important to understand all of the consequences of new technology before promoting it as the next big thing and implementing it into nearly every facet of our lives.

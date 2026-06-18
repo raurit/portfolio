@@ -20,7 +20,7 @@ format:
   html:
     theme:
       - united
-      - brand
+      - custom.scss
     css: styles.css
 
 

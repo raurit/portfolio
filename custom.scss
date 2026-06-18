@@ -1,0 +1,51 @@
+/*-- scss:defaults --*/
+$navbar-bg: transparent;
+
+/*-- scss:rules --*/
+
+/* Make the navbar taller */
+.navbar {
+  background-image: url("unsortedImages/websiteHeader.png") !important;
+  background-color: transparent !important;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 80px;        /* increase this to show more of the image */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Highlight effect on nav links */
+.navbar .nav-link {
+  background-color: rgba(0, 0, 0, 0.35);   /* dark pill behind each link */
+  border-radius: 6px;
+  padding: 0.3rem 0.75rem !important;
+  margin: 0 3px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.55);   /* darker on hover */
+}
+
+/* Same treatment for icons (GitHub, LinkedIn) */
+.navbar .nav-item a {
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  padding: 0.3rem 0.5rem !important;
+  margin: 0 3px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar .nav-item a:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* Extend the background image into the body top */
+body {
+  background-image: url("unsortedImages/websiteHeader.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+

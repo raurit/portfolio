@@ -3,29 +3,49 @@ $navbar-bg: transparent;
 
 /*-- scss:rules --*/
 
-/* Make the navbar taller */
+/* Navbar: transparent by default — body's header image shows through at the top */
 .navbar {
-  background-image: url("unsortedImages/websiteHeader.png") !important;
   background-color: transparent !important;
-  background-size: cover;
+  background-image: none;
+  background-size: 100vw auto;
   background-position: center top;
   background-repeat: no-repeat;
-  min-height: 80px;        /* increase this to show more of the image */
+  min-height: 8vw;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  transition: background-color 0.2s ease;
 }
 
-/* Highlight effect on nav links */
-.navbar .nav-link {
-  background-color: rgba(0, 0, 0, 0.35);   /* dark pill behind each link */
+/* Navbar: once scrolled past the header image, show it on the navbar itself */
+.navbar.navbar-scrolled {
+  background-image: url("unsortedImages/websiteHeader.png") !important;
+  background-size: 100vw auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* Title pill, visible against white once transparent */
+.navbar-brand {
+  background-color: rgba(0, 0, 0, 0.35);
   border-radius: 6px;
   padding: 0.3rem 0.75rem !important;
   margin: 0 3px;
   transition: background-color 0.2s ease;
 }
+.navbar-brand:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+}
 
+/* Highlight effect on nav links */
+.navbar .nav-link {
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  padding: 0.3rem 0.75rem !important;
+  margin: 0 3px;
+  transition: background-color 0.2s ease;
+}
 .navbar .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.55);   /* darker on hover */
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 /* Same treatment for icons (GitHub, LinkedIn) */
@@ -36,16 +56,14 @@ $navbar-bg: transparent;
   margin: 0 3px;
   transition: background-color 0.2s ease;
 }
-
 .navbar .nav-item a:hover {
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-/* Extend the background image into the body top */
+/* Body header image */
 body {
   background-image: url("unsortedImages/websiteHeader.png");
-  background-size: 100% auto;
+  background-size: 100vw clamp(220px, 20vw, 35vh);
   background-repeat: no-repeat;
   background-position: top center;
 }
-

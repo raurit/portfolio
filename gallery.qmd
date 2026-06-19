@@ -1,5 +1,5 @@
 ---
-title: "Art Gallery"
+title: ""
 format: html
 ---
 
@@ -7,7 +7,9 @@ format: html
 <div style="height: 3cm;"></div>
 :::
 
-All works here are made by yours truly! Those made digitally are done in Adobe Fresco, a personal preference of mine despite having access to Adobe Photoshop through my university. Simpler is better! I tend to use one brush (the pencil brush) and few layers since I started on traditional art. Other mediums I use include acrylic painting, oil pastels, mixed materials, Minecraft (it counts!), and pencil. 
+# Art Gallery
+
+All works here are made by yours truly! Those made digitally are done in Adobe Fresco, a personal preference of mine despite having access to Adobe Photoshop through my university. Simpler is better! I tend to use one brush (the pencil brush) and few layers. Old habits die hard coming from traditional art. Other mediums I use include acrylic painting, oil pastels, mixed materials, Minecraft (it counts!), and pencil. 
 
 If you have any questions about my art, would like to send a comment, or are wondering about commissions, reach me at [my email](mailto::auritrayne@gmail.com).
 

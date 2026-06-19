@@ -8,7 +8,6 @@ website:
   navbar:
     right:
       - gallery.qmd
-      - ResumeModern/CoverLetter.qmd
       - ResumeModern/ResumeModern.qmd
       - about.qmd
       - icon: github
@@ -22,6 +21,9 @@ format:
       - united
       - custom.scss
     css: styles.css
+    include-after-body:
+      - text: |
+          <script src="assets/navbar-scroll.js"></script>
 
 
 

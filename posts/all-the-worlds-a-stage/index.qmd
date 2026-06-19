@@ -1,6 +1,5 @@
 ---
 title: "All the World's a Stage"
-format: html
 author: "Rayne Aurit"
 date: "2026-01-31"
 categories: [Art]

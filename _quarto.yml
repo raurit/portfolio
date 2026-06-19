@@ -23,7 +23,7 @@ format:
     css: styles.css
     include-after-body:
       - text: |
-          <script src="assets/navbar-scroll.js"></script>
+          <script src="/assets/navbar-scroll.js"></script>
 
 
 

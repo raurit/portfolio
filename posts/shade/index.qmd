@@ -1,6 +1,5 @@
 ---
 title: "Shade"
-format: html
 author: "Rayne Aurit"
 date: "2026-01-28"
 categories: [Art]

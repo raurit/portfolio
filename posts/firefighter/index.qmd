@@ -1,6 +1,5 @@
 ---
 title: "Firefighter"
-format: html
 author: "Rayne Aurit"
 date: "2026-04-08"
 categories: [Art,Blog]

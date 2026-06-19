@@ -11,6 +11,34 @@ format: html
 
 ![All the World's a Stage: May, 2025](posts/all-the-worlds-a-stage/AllTheWorldsAStage.jpg){.lightbox}
 
+::: {layout-ncol=2}
+![Vanreno: April, 2024](posts/laurus/laurus.jpg){.lightbox}
+
+![Annabella: March, 2026](posts/annabella/annabella.jpg){.lightbox}
+:::
+
+![Knox: April, 2024](posts/knox-drawn/knoxDrawn.png){.lightbox}
+
+::: {layout-ncol=2}
+![Valley: May, 2026](posts/rocky-pasture/Landscape.jpg){.lightbox}
+
+![Zulius and the Northern Lights: May, 2026](posts/zulius-lights/ZuliusLights.png){.lightbox}
+:::
+
+::: {layout-ncol=2}
+![Sunflower: June, 2026](posts/sunflower-tote/sunflower.jpg){.lightbox}
+
+![Craig: July, 2024](posts/craig/craig.jpg){.lightbox}
+:::
+
+# Minecraft
+
+![Knox, Minecraft: June, 2026](posts/knox/knoxCastle.png){.lightbox}
+
+![Knox, Minecraft: June, 2026](posts/knox/knoxWindmill.png){.lightbox}
+
+![Knox, Minecraft: June, 2026](posts/knox/knoxValley.png){.lightbox}
+
 # Photography
 ![Capital Firefighter: February, 2026](posts/firefighter/FirefighterLadder.png){.lightbox}
 

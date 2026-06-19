@@ -3,7 +3,7 @@ title: "Working as a Double Agent"
 author: "Rayne Aurit"
 date: "2026-06-10"
 categories: [Blog]
-image: "MacLeanHall.png"
+image: "../maclean/maclean.jpg"
 ---
 
 ## Summertime Doom and Bloom

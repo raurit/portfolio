@@ -25,19 +25,50 @@ format: html
 ![Zulius and the Northern Lights: May, 2026](posts/zulius-lights/ZuliusLights.png){.lightbox}
 :::
 
+![Sunset Collage: January, 2026](posts/sunset-collage/sunset.jpg){.lightbox}
+
 ::: {layout-ncol=2}
 ![Sunflower: June, 2026](posts/sunflower-tote/sunflower.jpg){.lightbox}
 
 ![Craig: July, 2024](posts/craig/craig.jpg){.lightbox}
 :::
 
-# Minecraft
+![Mt. Velgrin: September, 2020](posts/mt-velgrin-trad/mtVelgrin.jpg){.lightbox}
+
+::: {layout-ncol=2}
+![Trombone: September, 2024](posts/trombone/trombone.jpg){.lightbox}
+
+![Husker Shako: September, 2024](posts/marching-band/shako.jpg){.lightbox}
+:::
+
+![Forest: January, 2025](posts/forest/forest.png){.lightbox}
+
+::: {layout-ncol=2}
+![Mt. Velgrin: May, 2026](posts/mt-velgrin/mtVelgrin.jpg){.lightbox}
+
+![Heart of Ardonia: May, 2026](posts/heart-of-ardonia/heartOfArdonia.jpg){.lightbox}
+:::
+
+![Drift Stormguard: June, 2024](posts/drift/drift.jpg){.lightbox}
+
+::: {layout-ncol=2}
+![Joanna Clark: February, 2024](posts/joanna-clark/joannaClark.jpg){.lightbox}
+
+![Self Portrait: February, 2024](posts/portrait/selfPortrait.jpg){.lightbox}
+:::
+
+# Minecraft Builds and Blender
 
 ![Knox, Minecraft: June, 2026](posts/knox/knoxCastle.png){.lightbox}
 
 ![Knox, Minecraft: June, 2026](posts/knox/knoxWindmill.png){.lightbox}
 
 ![Knox, Minecraft: June, 2026](posts/knox/knoxValley.png){.lightbox}
+
+![Knox, Blender Minecraft: May, 2026](posts/blender-basics/KnoxOutskirts.png){.lightbox}
+
+![Knox, Blender Minecraft: May, 2026](posts/blender-basics/ArenaRender2.png){.lightbox}
+
 
 # Photography
 ![Capital Firefighter: February, 2026](posts/firefighter/FirefighterLadder.png){.lightbox}
@@ -46,4 +77,20 @@ format: html
 ![Baltimore Renaissance: October, 2025](posts/baltimore-sunset/BaltimoreRenaissance.jpg){.lightbox}
 
 ![Driftwood Beach: June, 2025](posts/driftwood-beach/DriftwoodBeach.jpg){.lightbox}
+:::
+
+![Vegas: December, 2025](posts/vegas/vegas.jpg){.lightbox}
+
+::: {layout-ncol=2}
+![MacLean Hall: June, 2026](posts/maclean/maclean.jpg){.lightbox}
+
+![Praying Mantis: June, 2026](posts/praying-mantis/prayingMantis.jpg){.lightbox}
+:::
+
+![Disney World, Tangled: July, 2024](posts/tangled-sunset/tangled.jpg)
+
+::: {layout-ncol=2}
+![Save Our Stats: October, 2025](posts/saveourstats/saveourstats.jpg){.lightbox}
+
+![Husker Sunrise: September, 2024](posts/husker-sunrise/huskerStadium.jpg){.lightbox}
 :::

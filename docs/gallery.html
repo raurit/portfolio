@@ -843,7 +843,26 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
-<script src="assets/navbar-scroll.js"></script>
+<script>
+function getHeaderImageHeight() {
+  const preferred = window.innerWidth * 0.30;
+  const max = window.innerHeight * 0.55;
+  return Math.min(Math.max(280, preferred), max);
+}
+function updateNavbarOnScroll() {
+  const navbar = document.querySelector(".navbar");
+  if (!navbar) return;
+  const threshold = getHeaderImageHeight();
+  if (window.scrollY > threshold) {
+    navbar.classList.add("navbar-scrolled");
+  } else {
+    navbar.classList.remove("navbar-scrolled");
+  }
+}
+document.addEventListener("scroll", updateNavbarOnScroll);
+window.addEventListener("resize", updateNavbarOnScroll);
+window.addEventListener("load", updateNavbarOnScroll);
+</script>
 <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;

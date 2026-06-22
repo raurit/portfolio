@@ -1,8 +1,8 @@
 ---
-title: "Driftwood Beach"
+title: "SRCOS 2025 and Driftwood Beach"
 author: "Rayne Aurit"
 date: "2026-01-31"
-categories: [Art]
+categories: [Art, Blog]
 image: "DriftwoodBeach.jpg"
 draft: yes
 ---

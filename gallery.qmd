@@ -26,85 +26,85 @@ Other art socials:
 ![All the World's a Stage: May, 2025](posts/all-the-worlds-a-stage/AllTheWorldsAStage.jpg){.lightbox}
 
 ::: {layout-ncol=2}
-![Vanreno: April, 2024](posts/laurus/laurus.jpg){.lightbox}
+![Vanreno: April, 2024](unsortedImages/laurus.jpg){.lightbox}
 
-![Annabella: March, 2026](posts/annabella/annabella.jpg){.lightbox}
+![Annabella: March, 2026](unsortedImages/annabella.jpg){.lightbox}
 :::
 
-![Knox: April, 2024](posts/knox-drawn/knoxDrawn.png){.lightbox}
+![Knox: April, 2024](unsortedImages/knoxDrawn.png){.lightbox}
 
 ::: {layout-ncol=2}
-![Valley: May, 2026](posts/rocky-pasture/Landscape.jpg){.lightbox}
+![Valley: May, 2026](unsortedImages/Landscape.jpg){.lightbox}
 
-![Zulius and the Northern Lights: May, 2026](posts/zulius-lights/ZuliusLights.png){.lightbox}
+![Zulius and the Northern Lights: May, 2026](unsortedImages/ZuliusLights.png){.lightbox}
 :::
 
-![Sunset Collage: January, 2026](posts/sunset-collage/sunset.jpg){.lightbox}
+![Sunset Collage: January, 2026](unsortedImages/sunset.jpg){.lightbox}
 
 ::: {layout-ncol=2}
-![Sunflower: June, 2026](posts/sunflower-tote/sunflower.jpg){.lightbox}
+![Sunflower: June, 2026](unsortedImages/sunflower.jpg){.lightbox}
 
-![Craig: July, 2024](posts/craig/craig.jpg){.lightbox}
+![Craig: July, 2024](unsortedImages/craig.jpg){.lightbox}
 :::
 
-![Mt. Velgrin: September, 2020](posts/mt-velgrin-trad/mtVelgrin.jpg){.lightbox}
+![Mt. Velgrin: September, 2020](unsortedImages/mtVelgrin.jpg){.lightbox}
 
 ::: {layout-ncol=2}
-![Trombone: September, 2024](posts/trombone/trombone.jpg){.lightbox}
+![Trombone: September, 2024](unsortedImages/trombone.jpg){.lightbox}
 
-![Husker Shako: September, 2024](posts/marching-band/shako.jpg){.lightbox}
+![Husker Shako: September, 2024](unsortedImages/shako.jpg){.lightbox}
 :::
 
-![Forest: January, 2025](posts/forest/forest.png){.lightbox}
+![Forest: January, 2025](unsortedImages/forest.png){.lightbox}
 
 ::: {layout-ncol=2}
-![Mt. Velgrin: May, 2026](posts/mt-velgrin/mtVelgrin.jpg){.lightbox}
+![Mt. Velgrin: May, 2026](unsortedImages/mtVelgrinDigi.jpg){.lightbox}
 
-![Heart of Ardonia: May, 2026](posts/heart-of-ardonia/heartOfArdonia.jpg){.lightbox}
+![Heart of Ardonia: May, 2026](unsortedImages/heartOfArdonia.jpg){.lightbox}
 :::
 
-![Drift Stormguard: June, 2024](posts/drift/drift.jpg){.lightbox}
+![Drift Stormguard: June, 2024](unsortedImages/drift.jpg){.lightbox}
 
 ::: {layout-ncol=2}
-![Joanna Clark: February, 2024](posts/joanna-clark/joannaClark.jpg){.lightbox}
+![Joanna Clark: February, 2024](unsortedImages/joannaClark.jpg){.lightbox}
 
-![Self Portrait: February, 2024](posts/portrait/selfPortrait.jpg){.lightbox}
+![Self Portrait: February, 2024](unsortedImages/selfPortrait.jpg){.lightbox}
 :::
 
 # Minecraft Builds and Blender
 
-![Knox, Minecraft: June, 2026](posts/knox/knoxCastle.png){.lightbox}
+![Knox, Minecraft: June, 2026](unsortedImages/knoxCastle.png){.lightbox}
 
-![Knox, Minecraft: June, 2026](posts/knox/knoxWindmill.png){.lightbox}
+![Knox, Minecraft: June, 2026](unsortedImages/knoxWindmill.png){.lightbox}
 
-![Knox, Minecraft: June, 2026](posts/knox/knoxValley.png){.lightbox}
+![Knox, Minecraft: June, 2026](unsortedImages/knoxValley.png){.lightbox}
 
-![Knox, Blender Minecraft: May, 2026](posts/blender-basics/KnoxOutskirts.png){.lightbox}
+![Knox, Blender Minecraft: May, 2026](unsortedImages/KnoxOutskirts.png){.lightbox}
 
-![Knox, Blender Minecraft: May, 2026](posts/blender-basics/ArenaRender2.png){.lightbox}
+![Knox, Blender Minecraft: May, 2026](unsortedImages/ArenaRender2.png){.lightbox}
 
 
 # Photography
 ![Capital Firefighter: February, 2026](posts/firefighter/FirefighterLadder.png){.lightbox}
 
 ::: {layout-ncol=2}
-![Baltimore Renaissance: October, 2025](posts/baltimore-sunset/BaltimoreRenaissance.jpg){.lightbox}
+![Baltimore Renaissance: October, 2025](unsortedImages/BaltimoreRenaissance.jpg){.lightbox}
 
 ![Driftwood Beach: June, 2025](posts/driftwood-beach/DriftwoodBeach.jpg){.lightbox}
 :::
 
-![Vegas: December, 2025](posts/vegas/vegas.jpg){.lightbox}
+![Vegas: December, 2025](unsortedImages/vegas.jpg){.lightbox}
 
 ::: {layout-ncol=2}
-![MacLean Hall: June, 2026](posts/maclean/maclean.jpg){.lightbox}
+![MacLean Hall: June, 2026](posts/working-as-a-double-agent/maclean.png){.lightbox}
 
-![Praying Mantis: June, 2026](posts/praying-mantis/prayingMantis.jpg){.lightbox}
+![Praying Mantis: June, 2026](unsortedImages/prayingMantis.jpg){.lightbox}
 :::
 
-![Disney World, Tangled: July, 2024](posts/tangled-sunset/tangled.jpg)
+![Disney World, Tangled: July, 2024](unsortedImages/tangled.jpg)
 
 ::: {layout-ncol=2}
-![Save Our Stats: October, 2025](posts/saveourstats/saveourstats.jpg){.lightbox}
+![Save Our Stats: October, 2025](unsortedImages/saveourstats.jpg){.lightbox}
 
-![Husker Sunrise: September, 2024](posts/husker-sunrise/huskerStadium.jpg){.lightbox}
+![Husker Sunrise: September, 2024](unsortedImages/huskerStadium.jpg){.lightbox}
 :::

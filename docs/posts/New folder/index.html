@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Rayne Aurit">
+<meta name="dcterms.date" content="2026-06-23">
 
-<title>Home – Rayne Aurit’s Portfolio</title>
+<title>Feature Selection Using KNN, Research – Rayne Aurit’s Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,26 +28,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dc1e420c1319ecee79e5de7aa0b705a6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-dc1e420c1319ecee79e5de7aa0b705a6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,77 +73,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Rayne Aurit’s Portfolio</span>
     </a>
   </div>
@@ -154,15 +96,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./gallery.html"> 
+    <a class="nav-link" href="../../gallery.html"> 
 <span class="menu-text">Art Gallery</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ResumeModern/ResumeModern.pdf"> 
+    <a class="nav-link" href="../../ResumeModern/ResumeModern.pdf"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item compact">
@@ -185,347 +127,51 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Home</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Feature Selection Using KNN, Research</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Projects</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rayne Aurit </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 23, 2026</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="QXJ0">Art <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QmxvZw==">Blog <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Q2xhc3N3b3Jr">Classwork <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVzZWFyY2g=">Research <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-<section id="follow-my-professional-journey" class="level1">
-<h1>Follow My Professional Journey</h1>
+<p>yuh</p>
 
 
 
-</section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QXJ0" data-listing-date-sort="1782190800000" data-listing-file-modified-sort="1782241513845" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="220">
-<div class="thumbnail"><a href="./posts/driftwood-beach/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/driftwood-beach/icon.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/driftwood-beach/index.html" class="no-external">SRCOS SRC 2025 and Driftwood Beach</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXJ0'); return false;">Art</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/driftwood-beach/index.html" class="no-external">
- <em>Photography; Rayne Aurit, June, 2025</em>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/driftwood-beach/index.html" class="no-external">
-<div class="listing-date">
-Jun 23, 2026
-</div>
-<div class="listing-author">
-Rayne Aurit
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="QXJ0" data-listing-date-sort="1782104400000" data-listing-file-modified-sort="1782232098109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1211">
-<div class="thumbnail"><a href="./posts/all-the-worlds-a-stage/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/all-the-worlds-a-stage/AllTheWorldsAStage.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/all-the-worlds-a-stage/index.html" class="no-external">All the World’s a Stage</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXJ0'); return false;">Art</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/all-the-worlds-a-stage/index.html" class="no-external">
- <em>Digital art; Rayne Aurit, May, 2025</em>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/all-the-worlds-a-stage/index.html" class="no-external">
-<div class="listing-date">
-Jun 22, 2026
-</div>
-<div class="listing-author">
-Rayne Aurit
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="QmxvZw==" data-listing-date-sort="1781758800000" data-listing-file-modified-sort="1781814801591" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3716">
-<div class="thumbnail"><a href="./posts/stance-on-artificial-intelligence/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/stance-on-artificial-intelligence/index.html" class="no-external">Stance on Artificial Intelligence</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QmxvZw=='); return false;">Blog</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/stance-on-artificial-intelligence/index.html" class="no-external">
-This post will serve as the starting point for my opinion on Artificial Intelligence. This opinion will be guaranteed to change over time as the technology becomes more…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/stance-on-artificial-intelligence/index.html" class="no-external">
-<div class="listing-date">
-Jun 18, 2026
-</div>
-<div class="listing-author">
-Rayne Aurit
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="QmxvZw==" data-listing-date-sort="1781067600000" data-listing-file-modified-sort="1782240872515" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1978">
-<div class="thumbnail"><a href="./posts/working-as-a-double-agent/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/working-as-a-double-agent/icon.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/working-as-a-double-agent/index.html" class="no-external">Working as a Double Agent</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QmxvZw=='); return false;">Blog</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/working-as-a-double-agent/index.html" class="no-external">
-Summer always has a bittersweet taste. It either is beyond depressing when there is no work to do while people are busy or simply elsewhere or it is fun and the time runs…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/working-as-a-double-agent/index.html" class="no-external">
-<div class="listing-date">
-Jun 10, 2026
-</div>
-<div class="listing-author">
-Rayne Aurit
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="QXJ0JTJDQmxvZw==" data-listing-date-sort="1775624400000" data-listing-file-modified-sort="1781912914778" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="281">
-<div class="thumbnail"><a href="./posts/firefighter/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/firefighter/FirefighterLadder.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/firefighter/index.html" class="no-external">Firefighter</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXJ0'); return false;">Art</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QmxvZw=='); return false;">Blog</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/firefighter/index.html" class="no-external">
- <em>Photography; Rayne Aurit, February, 2026</em>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/firefighter/index.html" class="no-external">
-<div class="listing-date">
-Apr 8, 2026
-</div>
-<div class="listing-author">
-Rayne Aurit
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Q2xhc3N3b3Jr" data-listing-date-sort="1772949600000" data-listing-file-modified-sort="1782240029189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3508">
-<div class="thumbnail"><a href="./posts/user-guide/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/user-guide/forecast.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/user-guide/index.html" class="no-external">User Guide on Forecasting COVID-19 Data</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2xhc3N3b3Jr'); return false;">Classwork</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/user-guide/index.html" class="no-external">
-This user guide will demonstrate how to attain data from COVID-19 using the <code>covid19.analytics</code> package and 2 methods of forecasting with the <code>forecast</code> package (using ARIMA)…<code></code>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/user-guide/index.html" class="no-external">
-<div class="listing-date">
-Mar 8, 2026
-</div>
-<div class="listing-author">
-Rayne Aurit
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="QXJ0" data-listing-date-sort="1769580000000" data-listing-file-modified-sort="1782241103174" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="181">
-<div class="thumbnail"><a href="./posts/frog-collage/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/frog-collage/icon.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/frog-collage/index.html" class="no-external">Frog Collage</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXJ0'); return false;">Art</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/frog-collage/index.html" class="no-external">
- <em>Colored pencil, marker, newspaper; Rayne Aurit, April, 2025</em>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/frog-collage/index.html" class="no-external">
-<div class="listing-date">
-Jan 28, 2026
-</div>
-<div class="listing-author">
-Rayne Aurit
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="QXJ0" data-listing-date-sort="1769580000000" data-listing-file-modified-sort="1782240985315" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="264">
-<div class="thumbnail"><a href="./posts/shade/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/shade/icon.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/shade/index.html" class="no-external">Shade</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXJ0'); return false;">Art</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/shade/index.html" class="no-external">
- <em>Digital art; Rayne Aurit, November, 2025</em>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/shade/index.html" class="no-external">
-<div class="listing-date">
-Jan 28, 2026
-</div>
-<div class="listing-author">
-Rayne Aurit
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="QmxvZw==" data-listing-date-sort="1768370400000" data-listing-file-modified-sort="1770250200197" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="393">
-<div class="thumbnail"><a href="./posts/first-post/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/first-post/content.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/first-post/index.html" class="no-external">First Post</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QmxvZw=='); return false;">Blog</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/first-post/index.html" class="no-external">
-Hello and welcome to the first post on my personal portfolio doubling as a page where I can dispense my thoughts and other items of personal interest.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/first-post/index.html" class="no-external">
-<div class="listing-date">
-Jan 14, 2026
-</div>
-<div class="listing-author">
-Rayne Aurit
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1749618000000" data-listing-file-modified-sort="1782240791456" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="274">
-<div class="thumbnail"><a href="./posts/feature-selection/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/feature-selection/index.html" class="no-external">Blockwise Feature Selection Using KNN</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/feature-selection/index.html" class="no-external">
-Research was conducted in partnership with Tyler Davis and supervised by Dr.&nbsp;Souparno Ghosh
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/feature-selection/index.html" class="no-external">
-<div class="listing-date">
-Jun 11, 2025
-</div>
-<div class="listing-author">
-Tyler Davis, Rayne Aurit
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -2,7 +2,7 @@
 title: "SRCOS SRC 2025 and Driftwood Beach"
 author: "Rayne Aurit"
 date: "2026-06-23"
-categories: [Art, Blog]
+categories: [Art]
 image: "icon.png"
 ---
 

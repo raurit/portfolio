@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/driftwood-beach/index.html",
       "/posts/all-the-worlds-a-stage/index.html",
       "/posts/stance-on-artificial-intelligence/index.html",
       "/posts/working-as-a-double-agent/index.html",
@@ -9,7 +10,8 @@
       "/posts/user-guide/index.html",
       "/posts/frog-collage/index.html",
       "/posts/shade/index.html",
-      "/posts/first-post/index.html"
+      "/posts/first-post/index.html",
+      "/posts/feature-selection/index.html"
     ]
   }
 ]

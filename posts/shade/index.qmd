@@ -3,7 +3,7 @@ title: "Shade"
 author: "Rayne Aurit"
 date: "2026-01-28"
 categories: [Art]
-image: "Scribbles.jpg"
+image: "icon.png"
 ---
 
 ![Scribbles](Scribbles.jpg)

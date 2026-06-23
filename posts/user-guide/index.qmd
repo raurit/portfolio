@@ -2,7 +2,7 @@
 title: "User Guide on Forecasting COVID-19 Data"
 author: "Rayne Aurit"
 date: "2026-03-08"
-categories: [Projects]
+categories: [Classwork]
 image: "forecast.png"
 bibliography: references.bib
 ---

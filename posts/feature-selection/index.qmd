@@ -1,0 +1,18 @@
+---
+title: "Blockwise Feature Selection Using KNN"
+author: "Tyler Davis, Rayne Aurit"
+date: "2025-06-11"
+categories: [Research]
+---
+
+Research was conducted in partnership with Tyler Davis and supervised by Dr. Souparno Ghosh
+
+# Abstract
+
+Nearest neighbor regression is a non-parametric method that relies on local information to approximate the regression function. It is often sensitive to irrelevant features therefore feature selection is a key step to identify a subset of features that maximally contribute to predictive accuracy while reducing computational complexity. We particularly focus on RReliefF feature selection. This filter feature selection protocol produces feature importance scores and rank locally informative features. But how many features should be included from the ranked list is unclear. One can look at the cross-validation performance of K-nearest neighbor (K-NN) regression for increasingly large set of features (similar to forward selection protocol) and determine the appropriate number of features to be retained for subsequent prediction. However, the interplay between the size of the neighborhood (𝐾) and the size of feature set used to train the K-NN model makes comparison across model size difficult. Here we propose to train K-NN on disjoint blocks of features arranged in the descending order of their importance score produced by the RReliefF algorithm. Blocks of approximately same size keeps the model complexity comparable for each value of 𝐾. We then compare the cross-validation error curves over a grid of 𝐾 values for each feature blocks. We hypothesize that the error curves for the feature blocks which are significantly different from the error curve obtained for the features with least importance scores should be retained. Error curves for the feature blocks which are statistically similar to the error curve obtained for the features with least importance scores should be eliminated.
+
+# Poster
+
+```{=html}
+<embed src="FINALBlock-WiseFeatureSelectionDavisAurit.pdf" width="800px" height="600px" />
+```

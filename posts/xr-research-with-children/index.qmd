@@ -1,0 +1,26 @@
+---
+title: "Ethics of Extended Reality Research with Children, Adult Stakeholder Perspectives"
+author: "Rayne Aurit, Juan Pablo Hourcade"
+date: "2026-07-23"
+categories: [Research]
+---
+
+Research was supervised by Dr. Juan Pablo Hourcade as part of the Computing for Health and Well-being Research Experience for Undergraduates at the University of Iowa. The project will be split into three future papers, published at a later date. The following abstract is from the first publication, focused on the research topics in regard to Extended Reality Research with Children.
+
+# Abstract
+
+Extended reality (XR) technologies are increasingly being studied with children, yet stakeholders such as parents and professionals
+who work with children have had little formal input into research priorities. This paper presents findings from a probability-panel
+survey of 2,000 United States adults on their priorities for XR research with children. Respondents favored practitioners and children
+as the primary beneficiaries of XR research, and ranked practitioners and oversight experts as those most appropriate to decide what
+research is conducted and funded, with companies and government workers ranking last. On research topics, respondents ranked
+learning and health applications highest, consistent with current research trends. However, they showed a strong preference for safety
+over benefits, and safety-oriented research appears substantially underrepresented relative to this priority. A consistent preference for
+inclusion was also found across multiple questions. Low Kendall’s 𝑊 values indicate substantial individual variation in priorities,
+suggesting large-scale surveys and small-group participatory methods should be used together.
+
+# Poster
+
+```{=html}
+<embed src="EthicsOfXRWithChildren_RAurit_JHourcade.pdf" width="800px" height="600px" />
+```
